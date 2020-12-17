@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <meta charset="UTF-8">
+        <title>ChillForAnimals</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+
+        <link rel="stylesheet" href="owl-carousel/css/owl.carousel.css">
+        <link rel="stylesheet" href="owl-carousel/css/owl.theme.default.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="owl-carousel/js/owl.carousel.js"></script>
+        <style>
+            body#accjourn{
+                background:#F6FFDE url(img/dog-five.png);
+                color: #1F2326;
+                background-attachment: scroll;
+                background-repeat: no-repeat;
+                background-position: 10% 23%;
+                background-size: 300px auto;
+            }
+        </style>
+    </head> 
+    <body id="accjourn"> 
+        <header>
+            <div class="container main-header">
+                <div class="logo">
+                    <img src="img/logo_new.svg" alt="AnimalsChill" class="logo">                         
+                    <p class="header-p"><a class="link-in-header" href="index.html">Отель для животных</a></p>
+                </div> 
+                <div class="phone">
+                    <img src="img/phone.png" alt="">
+                    <p class="header-p">88005553535</p>
+                </div>
+                <div class="clock">
+                    <img src="img/clock.png" alt="">                                                  
+                    <p class = "header-p">пн-пт: 14:00-22:00    
+                    <br>пн-пт: 11:00-22:00</p>                                                
+                </div>
+                <div class="location">                                  
+                    <img src="img/location.png" alt="">
+                    <p class="header-p">Ул. Ленина, д.11</p>
+                </div>
+                <div class="contacts">  
+                    <div class="social instagram">
+                        <a href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                    </div>
+                    <div class="social facebook">
+                        <a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>    
+                    </div>
+                    <div class="social vk">
+                        <a href="#" target="_blank"><i class="fa fa-vk fa-2x"></i></a>    
+                    </div>                                                                                   
+                </div>
+                <div class="login">
+                    <p class="beautybutton"><a href="authorization.html">Войти</a></p>
+                    <p class="header-p"><a class="link-in-header" href="regestration.html">Не зарегистрированы?</a></p>
+                </div>
+            </div>
+        </header>
+        <section> 
+            <div class="bar">
+                <nav id="desktop" class="default">
+                    <ul>
+                        <a href="index.html"><li>Главная</li></a>
+                        <a href="aboutus.html"><li>О нас</li></a>                                                          
+                        <a href="conditions.html"><li>Условия</li></a>
+                        <a href="prices.html"><li>Цены</li></a>
+                        <a href="workers.html"><li>Сотрудники</li></a>
+                        <a href="reviews.html"><li>Отзывы</li></a>
+                        <a href="contacts.html"><li>Контакты</li></a>
+                    </ul>
+                </nav>
+            </div>
+            <div id="burg">
+                <a href="#">
+                    <span class="bar" id="top"></span>
+                    <span class="bar" id="middle"></span>
+                    <span class="bar" id="bottom"></span>
+                </a>
+            </div>
+            <div class="mobile-tab">
+                <nav id="mobile">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="aboutus.html">О нас</a></li>
+                        <li><a href="conditions.html">Условия</a></li>  
+                        <li><a href="prices.html">Цены</a></li> 
+                        <li><a href="workers.html">Сотрудники</a></li>
+                        <li><a href="reviews.html">Отзывы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li> 
+                    </ul>
+                </nav>
+            </div>
+            <script language="JavaScript">
+                $('.mobile-tab').hide();
+                $('#burg').on('click',function(){
+                $('.mobile-tab').slideToggle(1000);
+                })
+            </script>
+        </section>
+        <section>
+            <ul class="breadcrumb">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="accountmyorder.html">Личный кабинет</a></li>
+                <li class="activem">Журнал</li>
+            </ul>
+            <div class="container rew">
+                <div class="columnsacc">
+                    <div class="columnacc-1">
+                        <p class="beautybutton"><a href="accountmyorder.html">Мои заказы</a></p>
+                        <p class="beautybutton"><a href="reservationlog.html">Забронировать номер</a></p>
+                        <p class="beautybutton"><a href="accountmyprofile.html">Мой профиль</a></p>
+                        <p class="beautybutton"><a href="accountmypets.html">Мои питомцы</a></p>
+                        <p class="beautybutton"><a href="accountjournal.html">Журнал</a></p>
+                        <p class="beautybutton"><a href="chat.html">Общение</a></p>
+                    </div>
+                    <div class="columnacc-2">
+                        <div class="divforselectmenu">
+                            <select class="menu-for-mobile-acc minimal" onchange="window.location.href = this.options[this.selectedIndex].value">
+                                <option>Меню</option>
+                                <option value="/accountmyorder.html#">Мои заказы</option>
+                                <option value="/reservationlog.html#">Забронировать номер</option>
+                                <option value="/accountmyprofile.html#">Мой профиль</option>
+                                <option value="/accountmypets.html#">Мои питомцы</option>
+                                <option value="/accountjournal.html#">Журнал</option>
+                                <option value="/chat.html#">Общение</option>
+                            </select>
+                        </div>
+                    <h1>Журнал</h1>
+                    <div class="filtersearchjournals">
+                        <fieldset>
+                            <legend>Фильтр и поиск</legend>
+                            <div class="filterjournals">
+                                <div class="cols">
+                                    <div class="col">
+                                        <div>
+                                            <label for="typeanimals">Животное:</label>
+                                            <select name="typeanimals">
+                                                <option></option>
+                                                <option>Бэсси</option>
+                                                <option>Шарик</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <p>Сотрудник:</p>
+                                            <select name="name">
+                                                <option></option>
+                                                <option>Точилова</option>
+                                                <option>Юрков</option>
+                                            </select>  
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div>
+                                            <p>Дата:</p>
+                                            <input type="date"/>
+                                        </div>
+                                        <div>
+                                            <label for="appt1">Время с:</label>
+                                            <input type="time" id="appt1" name="appt" min="09:00" max="18:00" required>
+                                        
+                                            <label for="appt2">По:</label>
+                                            <input type="time" id="appt2" name="appt" min="09:00" max="18:00" required> 
+                                        </div>    
+                                    </div class="col">
+                                    <div class="center-btn">
+                                        <div class="allbutton"><p class="beautybutton"><a href=#>Найти</a></p></div>    
+                                    </div>
+                                </div>
+                        </fieldset>
+                    </div>
+                    <div class="top-cards">
+                        <div class="journal-card">
+                            <div class="journal-card-gallery" style="width:320px;margin-left:1.8%;">
+                                <div class="owl-carousel owl-theme slider-two" style="width:100%">
+                                    <div><img src="img/aboutus/animal-1.jpg" width="40%" height="40%"></div>
+                                    <div><img src="img/aboutus/animal-2.jpg" width="40%" height="40%"></div>
+                                    <div><img src="img/aboutus/animal-3.jpg" width="40%" height="40%"></div>
+                                    <div><img src="img/aboutus/animal-4.jpg" width="40%" height="40%"></div>
+                                    <div><img src="img/aboutus/animal-5.jpg" width="40%" height="40%"></div>
+                                    <div><img src="img/aboutus/animal-6.jpg" width="40%" height="40%"></div>
+                                    <div><img src="img/aboutus/animal-7.jpg" width="40%" height="40%"></div>
+                                    <div><img src="img/aboutus/animal-8.jpg" width="40%" height="40%"></div>
+                                </div>
+                            </div>
+                            <div class="descrofanimalinjournal">
+                                <div class="simple">
+                                    <div class="labels"><label for="myroom">Дата</label></div>
+                                    <div class="labels-1"><label name="myroom"><a class="alla" href=#>ПН 24.02.20</a></label></div>
+                                </div>
+                                <div class="simple">
+                                    <div class="labels"><label for="myfio">Время</label></div>
+                                    <div class="labels-1"><label name="myfio"><a class="alla" href=#>8:30 - 9:30</a></label></div>
+                                </div>
+                                <div class="simple">
+                                    <div class="labels"><label name="dateend">Сотрудник</label></div>
+                                    <div class="labels-1"><label name="dateend">Точилова Е. А.</label></div>
+                                </div>
+                                <div class="simple">
+                                    <div class="labels"><label for="mycomment">Комната №</label></div>
+                                    <div class="labels-1"><label name="mycomment">201</label></div>
+                                </div>
+                                <div class="simple">
+                                    <div class="labels"><label for="statusofwork">Статус</label></div>
+                                    <div class="labels-1"><label name="statusofwork">Выполнено</label></div>
+                                </div>
+                                <div class="task">
+                                    <div class="labels"><label for="myrealprice">Поручение</label></div>
+                                    <div class="labels-1"><p>Погладить тридцать пять раз</p></div>
+                                </div>
+                                <div class="task">
+                                    <div class="labels"><label for="commentofwork">Комментарий</label></div>
+                                    <div class="labels-1"><p>Очень много спит и кусает мужчин, пока те спят</p></div>
+                                </div>
+                                <div style="display: flex; flex-direction: row; justify-content:center;">
+                                    <div class="allbutton"><p class="beautybutton"><a href="accountjournalcard.html" style="padding:10px 20px;">подробнее</a></p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="journal-card">
+                            <div class="journal-card-gallery" style="width:320px;margin-left:1.8%;">
+                                <div class="owl-carousel owl-theme slider-two" style="width:100%">
+                                    <div><img src="img/aboutus/animal-1.jpg" width="40%" height="40%"></div>
+                                    <div><img src="img/aboutus/animal-2.jpg" width="40%" height="40%"></div>
+                                    <div><img src="img/aboutus/animal-3.jpg" width="40%" height="40%"></div>
+                                    <div><img src="img/aboutus/animal-4.jpg" width="40%" height="40%"></div>
+                                    <div><img src="img/aboutus/animal-5.jpg" width="40%" height="40%"></div>
+                                    <div><img src="img/aboutus/animal-6.jpg" width="40%" height="40%"></div>
+                                    <div><img src="img/aboutus/animal-7.jpg" width="40%" height="40%"></div>
+                                    <div><img src="img/aboutus/animal-8.jpg" width="40%" height="40%"></div>
+                                </div>
+                            </div>
+                            <div class="descrofanimalinjournal">
+                                <div class="simple">
+                                    <div class="labels"><label for="myroom">Дата</label></div>
+                                    <div class="labels-1"><label name="myroom"><a class="alla" href=#>ПН 24.02.20</a></label></div>
+                                </div>
+                                <div class="simple">
+                                    <div class="labels"><label for="myfio">Время</label></div>
+                                    <div class="labels-1"><label name="myfio"><a class="alla" href=#>8:30 - 9:30</a></label></div>
+                                </div>
+                                <div class="simple">
+                                    <div class="labels"><label name="dateend">Сотрудник</label></div>
+                                    <div class="labels-1"><label name="dateend">Точилова Е. А.</label></div>
+                                </div>
+                                <div class="simple">
+                                    <div class="labels"><label for="mycomment">Комната №</label></div>
+                                    <div class="labels-1"><label name="mycomment">201</label></div>
+                                </div>
+                                <div class="simple">
+                                    <div class="labels"><label for="statusofwork">Статус</label></div>
+                                    <div class="labels-1"><label name="statusofwork">Выполнено</label></div>
+                                </div>
+                                <div class="task">
+                                    <div class="labels"><label for="myrealprice">Поручение</label></div>
+                                    <div class="labels-1"><p>Погладить тридцать пять раз</p></div>
+                                </div>
+                                <div class="task">
+                                    <div class="labels"><label for="commentofwork">Комментарий</label></div>
+                                    <div class="labels-1"><p>Очень много спит и кусает мужчин, пока те спят</p></div>
+                                </div>
+                                <div style="display: flex; flex-direction: row; justify-content:center;">
+                                    <div class="allbutton"><p class="beautybutton"><a href="accountjournalcard.html" style="padding:10px 20px;">подробнее</a></p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="journal-cards">
+                <div class="journal-card">
+                    <div class="journal-card-gallery" style="width:320px;margin-left:1.8%;">
+                        <div class="owl-carousel owl-theme slider-two" style="width:100%">
+                            <div><img src="img/aboutus/animal-1.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-2.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-3.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-4.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-5.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-6.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-7.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-8.jpg" width="40%" height="40%"></div>
+                        </div>
+                    </div>
+                    <div class="descrofanimalinjournal">
+                        <div class="simple">
+                            <div class="labels"><label for="myroom">Дата</label></div>
+                            <div class="labels-1"><label name="myroom"><a class="alla" href=#>ПН 24.02.20</a></label></div>
+                        </div>
+                        <div class="simple">
+                            <div class="labels"><label for="myfio">Время</label></div>
+                            <div class="labels-1"><label name="myfio"><a class="alla" href=#>8:30 - 9:30</a></label></div>
+                        </div>
+                        <div class="simple">
+                            <div class="labels"><label name="dateend">Сотрудник</label></div>
+                            <div class="labels-1"><label name="dateend">Точилова Е. А.</label></div>
+                        </div>
+                        <div class="simple">
+                            <div class="labels"><label for="mycomment">Комната №</label></div>
+                            <div class="labels-1"><label name="mycomment">201</label></div>
+                        </div>
+                        <div class="simple">
+                            <div class="labels"><label for="statusofwork">Статус</label></div>
+                            <div class="labels-1"><label name="statusofwork">Выполнено</label></div>
+                        </div>
+                        <div class="task">
+                            <div class="labels"><label for="myrealprice">Поручение</label></div>
+                            <div class="labels-1"><p>Погладить тридцать пять раз</p></div>
+                        </div>
+                        <div class="task">
+                            <div class="labels"><label for="commentofwork">Комментарий</label></div>
+                            <div class="labels-1"><p>Очень много спит и кусает мужчин, пока те спят</p></div>
+                        </div>
+                        <div style="display: flex; flex-direction: row; justify-content:center;">
+                            <div class="allbutton"><p class="beautybutton"><a href="accountjournalcard.html" style="padding:10px 20px;">подробнее</a></p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="journal-card">
+                    <div class="journal-card-gallery" style="width:320px;">
+                        <div class="owl-carousel owl-theme slider-two" style="width:100%">
+                            <div><img src="img/aboutus/animal-1.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-2.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-3.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-4.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-5.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-6.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-7.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-8.jpg" width="40%" height="40%"></div>
+                        </div>
+                    </div>
+                    <div class="descrofanimalinjournal">
+                        <!-- <div>
+                            <h4 class="w-6">Дата</h4>
+                            <p><a class="alla" href=#>ПН 24.02.20</a></p>
+                        </div> -->
+                        <div class="simple">
+                            <div class="labels"><label for="myroom">Дата</label></div>
+                            <div class="labels-1"><label name="myroom"><a class="alla" href=#>ПН 24.02.20</a></label></div>
+                        </div>
+                        <div class="simple">
+                            <div class="labels"><label for="myfio">Время</label></div>
+                            <div class="labels-1"><label name="myfio"><a class="alla" href=#>8:30 - 9:30</a></label></div>
+                        </div>
+                        <div class="simple">
+                            <div class="labels"><label name="dateend">Сотрудник</label></div>
+                            <div class="labels-1"><label name="dateend">Точилова Е. А.</label></div>
+                        </div>
+                        <div class="simple">
+                            <div class="labels"><label for="mycomment">Комната №</label></div>
+                            <div class="labels-1"><label name="mycomment">201</label></div>
+                        </div>
+                        <div class="simple">
+                            <div class="labels"><label for="statusofwork">Статус</label></div>
+                            <div class="labels-1"><label name="statusofwork">Выполнено</label></div>
+                        </div>
+                        <div class="task">
+                            <div class="labels"><label for="myrealprice">Поручение</label></div>
+                            <div class="labels-1"><p>Погладить тридцать пять раз</p></div>
+                        </div>
+                        <div class="task">
+                            <div class="labels"><label for="commentofwork">Комментарий</label></div>
+                            <div class="labels-1"><p>Очень много спит и кусает мужчин, пока те спят</p></div>
+                        </div>
+                        <div style="display: flex; flex-direction: row; justify-content:center;">
+                            <div class="allbutton"><p class="beautybutton"><a href="accountjournalcard.html" style="padding:10px 20px;">подробнее</a></p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="journal-card">
+                    <div class="journal-card-gallery" style="width:320px;margin-left:1.8%;">
+                        <div class="owl-carousel owl-theme slider-two" style="width:100%">
+                            <div><img src="img/aboutus/animal-1.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-2.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-3.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-4.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-5.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-6.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-7.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-8.jpg" width="40%" height="40%"></div>
+                        </div>
+                    </div>
+                    <div class="descrofanimalinjournal">
+                        <div class="simple">
+                            <div class="labels"><label for="myroom">Дата</label></div>
+                            <div class="labels-1"><label name="myroom"><a class="alla" href=#>ПН 24.02.20</a></label></div>
+                        </div>
+                        <div class="simple">
+                            <div class="labels"><label for="myfio">Время</label></div>
+                            <div class="labels-1"><label name="myfio"><a class="alla" href=#>8:30 - 9:30</a></label></div>
+                        </div>
+                        <div class="simple">
+                            <div class="labels"><label name="dateend">Сотрудник</label></div>
+                            <div class="labels-1"><label name="dateend">Точилова Е. А.</label></div>
+                        </div>
+                        <div class="simple">
+                            <div class="labels"><label for="mycomment">Комната №</label></div>
+                            <div class="labels-1"><label name="mycomment">201</label></div>
+                        </div>
+                        <div class="simple">
+                            <div class="labels"><label for="statusofwork">Статус</label></div>
+                            <div class="labels-1"><label name="statusofwork">Выполнено</label></div>
+                        </div>
+                        <div class="task">
+                            <div class="labels"><label for="myrealprice">Поручение</label></div>
+                            <div class="labels-1"><p>Погладить тридцать пять раз</p></div>
+                        </div>
+                        <div class="task">
+                            <div class="labels"><label for="commentofwork">Комментарий</label></div>
+                            <div class="labels-1"><p>Очень много спит и кусает мужчин, пока те спят</p></div>
+                        </div>
+                        <div style="display: flex; flex-direction: row; justify-content:center;">
+                            <div class="allbutton"><p class="beautybutton"><a href="accountjournalcard.html" style="padding:10px 20px;">подробнее</a></p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="journal-card">
+                    <div class="journal-card-gallery" style="width:320px;margin-left:1.8%;">
+                        <div class="owl-carousel owl-theme slider-two" style="width:100%">
+                            <div><img src="img/aboutus/animal-1.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-2.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-3.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-4.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-5.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-6.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-7.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-8.jpg" width="40%" height="40%"></div>
+                        </div>
+                    </div>
+                    <div class="descrofanimalinjournal">
+                        <div class="simple">
+                            <div class="labels"><label for="myroom">Дата</label></div>
+                            <div class="labels-1"><label name="myroom"><a class="alla" href=#>ПН 24.02.20</a></label></div>
+                        </div>
+                        <div class="simple">
+                            <div class="labels"><label for="myfio">Время</label></div>
+                            <div class="labels-1"><label name="myfio"><a class="alla" href=#>8:30 - 9:30</a></label></div>
+                        </div>
+                        <div class="simple">
+                            <div class="labels"><label name="dateend">Сотрудник</label></div>
+                            <div class="labels-1"><label name="dateend">Точилова Е. А.</label></div>
+                        </div>
+                        <div class="simple">
+                            <div class="labels"><label for="mycomment">Комната №</label></div>
+                            <div class="labels-1"><label name="mycomment">201</label></div>
+                        </div>
+                        <div class="simple">
+                            <div class="labels"><label for="statusofwork">Статус</label></div>
+                            <div class="labels-1"><label name="statusofwork">Выполнено</label></div>
+                        </div>
+                        <div class="task">
+                            <div class="labels"><label for="myrealprice">Поручение</label></div>
+                            <div class="labels-1"><p>Погладить тридцать пять раз</p></div>
+                        </div>
+                        <div class="task">
+                            <div class="labels"><label for="commentofwork">Комментарий</label></div>
+                            <div class="labels-1"><p>Очень много спит и кусает мужчин, пока те спят</p></div>
+                        </div>
+                        <div style="display: flex; flex-direction: row; justify-content:center;">
+                            <div class="allbutton"><p class="beautybutton"><a href="accountjournalcard.html" style="padding:10px 20px;">подробнее</a></p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="journal-card">
+                    <div class="journal-card-gallery" style="width:320px;margin-left:1.8%;">
+                        <div class="owl-carousel owl-theme slider-two" style="width:100%">
+                            <div><img src="img/aboutus/animal-1.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-2.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-3.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-4.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-5.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-6.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-7.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-8.jpg" width="40%" height="40%"></div>
+                        </div>
+                    </div>
+                    <div class="descrofanimalinjournal">
+                        <div class="simple">
+                            <div class="labels"><label for="myroom">Дата</label></div>
+                            <div class="labels-1"><label name="myroom"><a class="alla" href=#>ПН 24.02.20</a></label></div>
+                        </div>
+                        <div class="simple">
+                            <div class="labels"><label for="myfio">Время</label></div>
+                            <div class="labels-1"><label name="myfio"><a class="alla" href=#>8:30 - 9:30</a></label></div>
+                        </div>
+                        <div class="simple">
+                            <div class="labels"><label name="dateend">Сотрудник</label></div>
+                            <div class="labels-1"><label name="dateend">Точилова Е. А.</label></div>
+                        </div>
+                        <div class="simple">
+                            <div class="labels"><label for="mycomment">Комната №</label></div>
+                            <div class="labels-1"><label name="mycomment">201</label></div>
+                        </div>
+                        <div class="simple">
+                            <div class="labels"><label for="statusofwork">Статус</label></div>
+                            <div class="labels-1"><label name="statusofwork">Выполнено</label></div>
+                        </div>
+                        <div class="task">
+                            <div class="labels"><label for="myrealprice">Поручение</label></div>
+                            <div class="labels-1"><p>Погладить тридцать пять раз</p></div>
+                        </div>
+                        <div class="task">
+                            <div class="labels"><label for="commentofwork">Комментарий</label></div>
+                            <div class="labels-1"><p>Очень много спит и кусает мужчин, пока те спят</p></div>
+                        </div>
+                        <div style="display: flex; flex-direction: row; justify-content:center;">
+                            <div class="allbutton"><p class="beautybutton"><a href="accountjournalcard.html" style="padding:10px 20px;">подробнее</a></p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="journal-card">
+                    <div class="journal-card-gallery" style="width:320px;margin-left:1.8%;">
+                        <div class="owl-carousel owl-theme slider-two" style="width:100%">
+                            <div><img src="img/aboutus/animal-1.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-2.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-3.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-4.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-5.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-6.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-7.jpg" width="40%" height="40%"></div>
+                            <div><img src="img/aboutus/animal-8.jpg" width="40%" height="40%"></div>
+                        </div>
+                    </div>
+                    <div class="descrofanimalinjournal">
+                        <div class="simple">
+                            <div class="labels"><label for="myroom">Дата</label></div>
+                            <div class="labels-1"><label name="myroom"><a class="alla" href=#>ПН 24.02.20</a></label></div>
+                        </div>
+                        <div class="simple">
+                            <div class="labels"><label for="myfio">Время</label></div>
+                            <div class="labels-1"><label name="myfio"><a class="alla" href=#>8:30 - 9:30</a></label></div>
+                        </div>
+                        <div class="simple">
+                            <div class="labels"><label name="dateend">Сотрудник</label></div>
+                            <div class="labels-1"><label name="dateend">Точилова Е. А.</label></div>
+                        </div>
+                        <div class="simple">
+                            <div class="labels"><label for="mycomment">Комната №</label></div>
+                            <div class="labels-1"><label name="mycomment">201</label></div>
+                        </div>
+                        <div class="simple">
+                            <div class="labels"><label for="statusofwork">Статус</label></div>
+                            <div class="labels-1"><label name="statusofwork">Выполнено</label></div>
+                        </div>
+                        <div class="task">
+                            <div class="labels"><label for="myrealprice">Поручение</label></div>
+                            <div class="labels-1"><p>Погладить тридцать пять раз</p></div>
+                        </div>
+                        <div class="task">
+                            <div class="labels"><label for="commentofwork">Комментарий</label></div>
+                            <div class="labels-1"><p>Очень много спит и кусает мужчин, пока те спят</p></div>
+                        </div>
+                        <div style="display: flex; flex-direction: row; justify-content:center;">
+                            <div class="allbutton"><p class="beautybutton"><a href="accountjournalcard.html" style="padding:10px 20px;">подробнее</a></p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#">1</a>
+                    <a class="active" href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">&raquo;</a>
+                </div>  
+            </section>
+        </div>
+        <script>
+            $(function() {
+                $(".slider-two").owlCarousel({
+                    nav:true,
+                    loop:true,
+                    margin:10,
+                    autoWidth:true,
+                    autoplay:true,
+                    autoplayTimeout:1000,
+                    autoplayHoverPause:false,
+                    navText: ['<i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>','<i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>'],
+                    responsive:{
+                        0:{
+                            items:1
+                        },
+                        600:{
+                            items:3
+                        },
+                        1000:{
+                            items:5
+                        }
+                    }
+                });
+            });
+        </script>
+        <footer>
+            <div class="cont cont-footer">
+                <div class="listoftitles">
+                    <div class="headline"><p>Меню</p></div>
+                    <hr  width="180" size="1" color="#997843" />
+                    <div class="block1">
+                        <div><p><a href="index.html">Главная</a></p></div>
+                        <div><p><a href="conditions.html">Условия</a></p></div>
+                        <div><p><a href="prices.html">Цены</a></p></div>
+                        <div><p><a href="workers.html">Сотрудники</a></p></div>
+                        <div><p><a href="reviews.html">Отзывы</a></p></div>
+                        <div><p><a href="contacts.html">Контакты</a></p></div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="headline"><p>Режим работы</p></div class="headline">
+                    <hr  width="180" size="1" color="#997843" />
+                    <div class="block1">
+                        <div>
+                            <img src="img/socials/clock.svg" width="20" height="20" alt="">
+                            <p>Понедельник-Воскресение:<br>14:00-22:00</p>
+                        </div>
+                        <br>
+                        <div>
+                            <img src="img/socials/pin.svg" width="20" height="20" alt="">
+                            <p>Ленина, 11<br>Иркутск, Россия</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="headline"><p>Контакты</p></div class="headline">
+                    <hr  width="180" size="1" color="#997843" />
+                    <div class="block1">
+                        <div>
+                            <img src="img/socials/instagram.svg" width="20" height="20" alt="">
+                            <p><a href=#>ChillForAnimals</a></p>
+                        </div>
+                        <div>
+                            <img src="img/socials/facebook.svg" width="20" height="20" alt="">
+                            <p><a href=#>ChillForAnimals</a></p class="header-p">
+                        </div>
+                        <div>
+                            <img src="img/socials/twitter.svg" width="20" height="20" alt="">
+                            <p><a href=#>ChillForAnimals</a></p class="header-p">
+                        </div>
+                        <div>
+                            <img src="img/socials/phone.svg" width="20" height="20" alt="">
+                            <p><a href=#>8-950-076-88-14</a></p class="header-p">
+                        </div>
+                        <div>
+                            <img src="img/socials/email.svg" width="20" height="20" alt="">
+                            <p><a href=#>chillFA@gmail.com</a></p class="header-p">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body> 
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html> 
+     <head> 
+          <meta charset="UTF-8">
+          <title>ChillForAnimals</title>
+          <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+          <link rel="stylesheet" type="text/css" href="css/style.css">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script src="script.js"></script>
+     </head> 
+     <body> 
+          <header>
+               <div class="container main-header">
+                    <div class="logo">
+                         <img src="img/logo_new.svg" alt="AnimalsChill" class="logo">                         
+                         <p class="header-p"><a class="link-in-header" href="index.html">Отель для животных</a></p>
+                    </div> 
+                    <div class="phone">
+                         <img src="img/phone.png" alt="">
+                         <p class="header-p">88005553535</p>
+                    </div>
+                    <div class="clock">
+                         <img src="img/clock.png" alt="">                                                  
+                         <p class = "header-p">пн-пт: 14:00-22:00    
+                         <br>пн-пт: 11:00-22:00</p>                                                
+                    </div>
+                    <div class="location">                                  
+                         <img src="img/location.png" alt="">
+                         <p class="header-p">Ул. Ленина, д.11</p>
+                    </div>
+                    <div class="contacts">  
+                         <div class="social instagram">
+                              <a href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                         </div>
+                         <div class="social facebook">
+                              <a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>    
+                         </div>
+                         <div class="social vk">
+                              <a href="#" target="_blank"><i class="fa fa-vk fa-2x"></i></a>    
+                         </div>                                                                                   
+                    </div>
+                    <div class="login">
+                         <p class="beautybutton"><a href="authorization.html">Войти</a></p>
+                         <p class="header-p"><a class="link-in-header" href="regestration.html">Не зарегистрированы?</a></p>
+                    </div>
+               </div>
+          </header>
+          <section> 
+               <div class="bar">
+                    <nav id="desktop" class="default">
+                         <ul>
+                              <a href="index.html"><li>Главная</li></a>
+                              <a href="aboutus.html"><li>О нас</li></a>                                                          
+                              <a href="conditions.html"><li>Условия</li></a>
+                              <a href="prices.html"><li>Цены</li></a>
+                              <a href="workers.html"><li>Сотрудники</li></a>
+                              <a href="reviews.html"><li>Отзывы</li></a>
+                              <a href="contacts.html"><li>Контакты</li></a>
+                         </ul>
+                    </nav>
+               </div>
+               <div id="burg">
+                    <a href="#">
+                         <span class="bar" id="top"></span>
+                         <span class="bar" id="middle"></span>
+                         <span class="bar" id="bottom"></span>
+                    </a>
+               </div>
+               <div class="mobile-tab">
+                    <nav id="mobile">
+                         <ul>
+                              <li><a href="index.html">Главная</a></li>
+                              <li><a href="aboutus.html">О нас</a></li>
+                              <li><a href="conditions.html">Условия</a></li>  
+                              <li><a href="prices.html">Цены</a></li> 
+                              <li><a href="workers.html">Сотрудники</a></li>
+                              <li><a href="reviews.html">Отзывы</a></li>
+                              <li><a href="contacts.html">Контакты</a></li> 
+                         </ul>
+                    </nav>
+               </div>
+               <script language="JavaScript">$('.mobile-tab').hide();
+                    $('#burg').on('click',function(){
+                    $('.mobile-tab').slideToggle(1000);
+                    })
+               </script>
+          </section>
+		<ul class="breadcrumb">
+               <li><a href="index.html">Главная</a></li>
+               <li class="activem">Сотрудники</li>
+          </ul>
+          <div class="container cont-title-prices">
+               <section>
+                    <div class="title"><h1>Наша команда</h1></div>
+               </section>
+          </div>
+          <div class="container cont-prices">
+               <section>
+                    <p class="ourteam">Наша команда зоонянь - это профессиональные специалисты, имеющие ветеринарное образование. Зооняни проводят ежедневный осмотр каждого питомца, занимаются уходом, кормлением и общением с постояльцами.</p>
+                    <h3>Знакомьтесь, наши котоняни!</h3>
+                    <div class="div-for-workers">
+                         <div class="cards-worker">
+                              <div class="card-workers">
+                                   <figure>
+                                        <div class="imgofworker">
+                                             <img src="img/workers/worker-1.jpg" width="200" height="200" alt="">
+                                        </div>
+                                        <figcaption>Наталья Ганусенко</figcaption>
+                                   </figure>
+                                   <div class="descrofworker">
+                                        <h4>Стаж работы</h4>
+                                        <p>5 лет</p>
+                                        <h4>Должность</h4>
+                                        <p>Зооняня</p>
+                                        <h4>Образование</h4>
+                                        <p>Врач-ветеринар</p>
+                                   </div>
+                              </div> 
+                              <div class="card-workers">
+                                   <figure>
+                                        <div class="imgofworker">
+                                             <img src="img/workers/worker-2.jpg" width="200" height="200" alt="">
+                                        </div>
+                                        <figcaption>Елена Петрова</figcaption>
+                                   </figure>
+                                   <div class="descrofworker">
+                                        <h4>Стаж работы</h4>
+                                        <p>5 лет</p>
+                                        <h4>Должность</h4>
+                                        <p>Зооняня</p>
+                                        <h4>Образование</h4>
+                                        <p>Врач-ветеринар</p>
+                                   </div>
+                              </div> 
+                              <div class="card-workers">
+                                   <figure>
+                                        <div class="imgofworker">
+                                             <img src="img/workers/worker-3.jpg" width="200" height="200" alt="">
+                                        </div>
+                                        <figcaption>Виктория Андрухова</figcaption>
+                                   </figure>
+                                   <div class="descrofworker">
+                                        <h4>Стаж работы</h4>
+                                        <p>5 лет</p>
+                                        <h4>Должность</h4>
+                                        <p>Зооняня</p>
+                                        <h4>Образование</h4>
+                                        <p>Врач-ветеринар</p>
+                                   </div>
+                              </div>
+                              <div class="card-workers">
+                                   <figure>
+                                        <div class="imgofworker">
+                                             <img src="img/workers/worker-4.jpg" width="200" height="200" alt="">
+                                        </div>
+                                        <figcaption>Иван Тюхай</figcaption>
+                                   </figure>
+                                   <div class="descrofworker">
+                                        <h4>Стаж работы</h4>
+                                        <p>5 лет</p>
+                                        <h4>Должность</h4>
+                                        <p>Зооняня</p>
+                                        <h4>Образование</h4>
+                                        <p>Врач-ветеринар</p>
+                                   </div>
+                              </div> 
+                              <div class="card-workers">
+                                   <figure>
+                                        <div class="imgofworker">
+                                             <img src="img/workers/worker-5.jpg" width="200" height="200" alt="">
+                                        </div>
+                                        <figcaption>Дмитрий Ветлов</figcaption>
+                                   </figure>
+                                   <div class="descrofworker">
+                                        <h4>Стаж работы</h4>
+                                        <p>5 лет</p>
+                                        <h4>Должность</h4>
+                                        <p>Зооняня</p>
+                                        <h4>Образование</h4>
+                                        <p>Врач-ветеринар</p>
+                                   </div>
+                              </div> 
+                              <div class="card-workers">
+                                   <figure>
+                                        <div class="imgofworker">
+                                             <img src="img/workers/worker-6.jpg" width="200" height="200" alt="">
+                                        </div>
+                                        <figcaption>Мария Фалилеева</figcaption>
+                                   </figure>
+                                   <div class="descrofworker">
+                                        <h4>Стаж работы</h4>
+                                        <p>5 лет</p>
+                                        <h4>Должность</h4>
+                                        <p>Зооняня</p>
+                                        <h4>Образование</h4>
+                                        <p>Врач-ветеринар</p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </section>  
+          </div>
+          <section>
+               <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#">1</a>
+                    <a class="active" href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">&raquo;</a>
+               </div>  
+          </section>
+          <footer>
+               <div class="cont cont-footer">
+                    <div class="listoftitles">
+                         <div class="headline"><p>Меню</p></div>
+                         <hr  width="180" size="1" color="#997843" />
+                         <div class="block1">
+                              <div><p><a href="index.html">Главная</a></p></div>
+                              <div><p><a href="conditions.html">Условия</a></p></div>
+                              <div><p><a href="prices.html">Цены</a></p></div>
+                              <div><p><a href="workers.html">Сотрудники</a></p></div>
+                              <div><p><a href="reviews.html">Отзывы</a></p></div>
+                              <div><p><a href="contacts.html">Контакты</a></p></div>
+                         </div>
+                    </div>
+                    <div class="block">
+                         <div class="headline"><p>Режим работы</p></div>
+                         <hr  width="180" size="1" color="#997843" />
+                         <div class="block1">
+                              <div>
+                                   <img src="img/socials/clock.svg" width="20" height="20" alt="">
+                                   <p>Понедельник-Воскресение:<br>14:00-22:00</p>
+                              </div>
+                              <br>
+                              <div>
+                                   <img src="img/socials/pin.svg" width="20" height="20" alt="">
+                                   <p>Ленина, 11<br>Иркутск, Россия</p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="block">
+                         <div class="headline"><p>Контакты</p></div>
+                         <hr  width="180" size="1" color="#997843" />
+                         <div class="block1">
+                              <div>
+                                   <img src="img/socials/instagram.svg" width="20" height="20" alt="">
+                                   <p><a href=#>ChillForAnimals</a></p>
+                              </div>
+                              <div>
+                                   <img src="img/socials/facebook.svg" width="20" height="20" alt="">
+                                   <p><a href=#>ChillForAnimals</a></p class="header-p">
+                              </div>
+                              <div>
+                                   <img src="img/socials/twitter.svg" width="20" height="20" alt="">
+                                   <p><a href=#>ChillForAnimals</a></p class="header-p">
+                              </div>
+                              <div>
+                                   <img src="img/socials/phone.svg" width="20" height="20" alt="">
+                                   <p><a href=#>8-950-076-88-14</a></p class="header-p">
+                              </div>
+                              <div>
+                                   <img src="img/socials/email.svg" width="20" height="20" alt="">
+                                   <p><a href=#>chillFA@gmail.com</a></p class="header-p">
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </footer> 
+     </body> 
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html> 
+     <head> 
+          <meta charset="UTF-8">
+          <title>ChillForAnimals</title>
+          <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+          <link rel="stylesheet" type="text/css" href="css/style.css">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script src="script.js"></script>
+     </head> 
+     <body> 
+          <header>
+               <div class="container main-header">
+                    <div class="logo">
+                         <img src="img/logo_new.svg" alt="AnimalsChill" class="logo">                         
+                         <p class="header-p"><a class="link-in-header" href="index.html">Отель для животных</a></p>
+                    </div> 
+                    <div class="phone">
+                         <img src="img/phone.png" alt="">
+                         <p class="header-p">88005553535</p>
+                    </div>
+                    <div class="clock">
+                         <img src="img/clock.png" alt="">                                                  
+                         <p class = "header-p">пн-пт: 14:00-22:00    
+                         <br>пн-пт: 11:00-22:00</p>                                                
+                    </div>
+                    <div class="location">                                  
+                         <img src="img/location.png" alt="">
+                         <p class="header-p">Ул. Ленина, д.11</p>
+                    </div>
+                    <div class="contacts">  
+                         <div class="social instagram">
+                              <a href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                         </div>
+                         <div class="social facebook">
+                              <a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>    
+                         </div>
+                         <div class="social vk">
+                              <a href="#" target="_blank"><i class="fa fa-vk fa-2x"></i></a>    
+                         </div>                                                                                   
+                    </div>
+                    <div class="login">
+                         <p class="beautybutton"><a href="authorization.html">Войти</a></p>
+                         <p class="header-p"><a class="link-in-header" href="regestration.html">Не зарегистрированы?</a></p>
+                    </div>
+               </div>
+          </header>
+         <section> 
+               <div class="bar">
+                    <nav id="desktop" class="default">
+                         <ul>
+                              <a href="index.html"><li>Главная</li></a>
+                              <a href="aboutus.html"><li>О нас</li></a>                                                          
+                              <a href="conditions.html"><li>Условия</li></a>
+                              <a href="prices.html"><li>Цены</li></a>
+                              <a href="workers.html"><li>Сотрудники</li></a>
+                              <a href="reviews.html"><li>Отзывы</li></a>
+                              <a href="contacts.html"><li>Контакты</li></a>
+                         </ul>
+                    </nav>
+               </div>
+               <div id="burg">
+                    <a href="#">
+                         <span class="bar" id="top"></span>
+                         <span class="bar" id="middle"></span>
+                         <span class="bar" id="bottom"></span>
+                    </a>
+               </div>
+               <div class="mobile-tab">
+                    <nav id="mobile">
+                         <ul>
+                              <li><a href="index.html">Главная</a></li>
+                              <li><a href="aboutus.html">О нас</a></li>
+                              <li><a href="conditions.html">Условия</a></li>  
+                              <li><a href="prices.html">Цены</a></li> 
+                              <li><a href="workers.html">Сотрудники</a></li>
+                              <li><a href="reviews.html">Отзывы</a></li>
+                              <li><a href="contacts.html">Контакты</a></li> 
+                         </ul>
+                    </nav>
+               </div>
+               
+               <script language="JavaScript">$('.mobile-tab').hide();
+                    $('#burg').on('click',function(){
+                    $('.mobile-tab').slideToggle(1000);
+                    })
+               </script>
+          </section>
+          <section>
+               <ul class="breadcrumb">
+               <li><a href="index.html">Главная</a></li>
+               <li class="activem">О нас</li>
+               </ul>
+          </section>
+		<section>
+               <div class="container aboutuspage">
+                    <h1>О нас</h1>
+                    <p class="aboutusp">Для нас все питомцы особенные, поэтому мы ухаживаем за животным, учитывая его потребности.</p class="aboutusp">
+                    <div class="cards aboutuscards">
+                         <div class="aboutuscard">
+                              <figure>
+                                   <div class="imgofworker">
+                                        <img src="img/room-1.jpg" width="250" height="50" alt="">
+                                   </div>
+                              </figure>
+                              <div class="descrofaboutus">
+                                   <h3>Для кошек</h3>
+                                   <p>Многоуровневые номера.</p>
+                                   <p>Стрижка когтей в подарок при длительном проживании.</p>    
+                                   <p>Отсутствие доплаты за второго питомца в номерах эконом и люкс.</p> 
+                              </div>
+                         </div>
+                         <div class="aboutuscard">
+                              <figure>
+                                   <div class="imgofworker">
+                                        <img src="img/room-2.jpg" width="250" height="50" alt="">
+                                   </div>
+                              </figure>
+                              <div class="descrofaboutus">
+                                   <h3>Для собак</h3>
+                                   <p>Выгул в парке рядом с гостиницей.</p>
+                                   <p>Мытьё и стрижка когтей в подарок при длительном проживании.</p>    
+                                   <p>Учитываем привычный распорядок дня питомца.</p> 
+                              </div>
+                         </div>
+                    </div>
+                    <h2>Бережный трансфер</h2>
+                    <div class="box-zootaxi">
+                         <div>
+                              <p>Если у Вас нет времени или возможности привезти питомца к нам в гостиницу, мы готовы самостоятельно организовать трансфер до гостиницы.</p>
+                              <p>Наш сотрудник подъедет и заберет вашего пушистого или пернатого друга, а в указанную дату мы привезем его назад.</p>
+                              <p>Транспортировка животных осуществляется только в специальных сумках-переносках. При отсутствии у Вас переноски, наша гостиница предоставит ее Вам.</p>
+                         </div>
+                         <img src="img/aboutus/zootaxi.jpg" width="500px" height="100%">
+                    </div>
+                    <h2>Фотографии нашей гостиницы</h2>
+                    <p class="aboutusp-1">Место для отдыха, наполненное теплом и заботой.</p>
+                    <div class="photofrominsta">
+                         <a href="#">
+                              <div class="content">
+                                   <div class="content-overlay"></div>
+                                   <img class="content-image" src="img/aboutus/animal-1.jpg" alt="">
+                                   <div class="content-details fadeIn-bottom">
+                                        <p>@AnimalChill: Наша красавица Лейси #зоогостинница #отель для кошек #отель для собак</p>
+                                   </div>
+                              </div>
+                         </a>
+                         <a href="#">
+                              <div class="content">
+                                   <div class="content-overlay"></div>
+                                   <img class="content-image" src="img/aboutus/animal-2.jpg" alt="">
+                                   <div class="content-details fadeIn-bottom">
+                                        <p>@AnimalChill: Наша красавица Лейси #зоогостинница #отель для кошек #отель для собак</p>
+                                   </div>
+                              </div>
+                         </a>
+                         <a href="#">
+                         <div class="content">
+                              <div class="content-overlay"></div>
+                              <img class="content-image" src="img/aboutus/animal-3.jpg" alt="">
+                              <div class="content-details fadeIn-bottom">
+                                   <p>@AnimalChill: Наша красавица Лейси #зоогостинница #отель для кошек #отель для собак</p>
+                              </div>
+                         </div>
+                         </a>
+                         <a href="#">
+                          <div class="content">
+                              <div class="content-overlay"></div>
+                              <img class="content-image" src="img/aboutus/animal-4.jpg" alt="">
+                              <div class="content-details fadeIn-bottom">
+                                   <p>@AnimalChill: Наша красавица Лейси #зоогостинница #отель для кошек #отель для собак</p>
+                              </div>
+                          </div>
+                         </a>
+                          <a href="#">
+                          <div class="content">
+                              <div class="content-overlay"></div>
+                              <img class="content-image" src="img/aboutus/animal-5.jpg" alt="">
+                              <div class="content-details fadeIn-bottom">
+                                   <p>@AnimalChill: Наша красавица Лейси #зоогостинница #отель для кошек #отель для собак</p>
+                              </div>
+                          </div>
+                         </a>
+                          <a href="#">
+                          <div class="content">
+                              <div class="content-overlay"></div>
+                              <img class="content-image" src="img/aboutus/animal-6.jpg" alt="">
+                              <div class="content-details fadeIn-bottom">
+                                   <p>@AnimalChill: Наша красавица Лейси #зоогостинница #отель для кошек #отель для собак</p>
+                              </div>
+                          </div>
+                         </a>
+                          <a href="#">
+                          <div class="content">
+                              <div class="content-overlay"></div>
+                              <img class="content-image" src="img/aboutus/animal-7.jpg" alt="">
+                              <div class="content-details fadeIn-bottom">
+                                   <p>@AnimalChill: Наша красавица Лейси #зоогостинница #отель для кошек #отель для собак</p>
+                              </div>
+                          </div>
+                         </a>
+                          <a href="#">
+                          <div class="content">
+                              <div class="content-overlay"></div>
+                              <img class="content-image" src="img/aboutus/animal-8.jpg" alt="">
+                              <div class="content-details fadeIn-bottom">
+                                   <p>@AnimalChill: Наша красавица Лейси #зоогостинница #отель для кошек #отель для собак</p>
+                              </div>
+                          </div>
+                         </a>
+                    </div>
+
+                    <h2>Будьте неразлучны со своим питомцем</h2>
+                    <div class="box-video">
+                         <p><img src="img/portrait_of_a_dog.jpg" width="1000" height="100%"></p>
+                         <div class="textonimg">
+                              <h3>Ежедневные отчеты</h3>
+                              <p> Отправляем фото занятий и прогулок с питомцем каждый день. Посмотреть их вы можете в личном кабинете, если очень соскучились;) </p>
+                         </div>
+                         <div class="textonimg-2">
+                              <h3>Держим вас в курсе</h3>
+                              <p>Администратор всегда на связи и подробно расскажет о состоянии животного</p>
+                         </div>
+                    </div>
+                    <h2>Оставьте свое животное в надежных руках</h2>
+                    <div class="box-pluses">
+                         <div>
+                              <img src="img/aboutus/pluses/vacuum-cleaner.svg" width="100" height="100">
+                              <p><strong>Мы очень тщательно следим за чистотой.</strong> Дважды в день проводится влажная уборка комнат и коридоров. Также, планово проводится обработка от паразитов.</p>
+                         </div>
+                         <div>
+                              <img src="img/aboutus/pluses/veterinary.svg" width="100" height="100">
+                              <p>Мы принимаем животных <b>только с наличием прививок и с ветеринарным паспортом.</b> При въезде в наш отель животное осматривают ветеринары на наличие заболеваний.</p>
+                         </div>
+                         <div>
+                              <img src="img/aboutus/pluses/veterinary (2).svg" width="100" height="100">
+                              <p>Наши чуткие сотрудники заботятся и ухаживают за животными уже 10 лет.</p>
+                         </div>                    
+                         <div>
+                              <img src="img/aboutus/pluses/veterinary (1).svg" width="100" height="100">
+                              <p><b>Сотрудничаем с ближайшими ветеринарными клиниками.</b> Дотсавим питомца для оказания помощи при возникновении необходимости.</p>
+                         </div>
+                    </div>
+                    <h2>О чём нас часто спрашивают?</h2>
+                    <div class="chat-box withguests">
+                         <div class="container123">
+                              <img src="img/aboutus/guests/boy.svg" width="50" height="50" alt="Аватар">
+                              <p>Как до вас добраться?</p>
+                         </div>
+                         <div class="container123 darker1">
+                              <img src="img/logo_new.svg" width="50" height="50" alt="Аватар" class="right">
+                              <p>
+                                   <ol>
+                                        <li>На автомобиле: введите в поиск название "AnimalsChill" на Яндекс.Навигаторе и следуйте по маршруту до Ленина, 11 (заезд со стороны БГУ)</li>
+                                        <li>На общественном транспорте: до остановки "Художественный музей" (Автобусы №80,74,480,7)</li>
+                                   </ol>
+                              </p>
+                         </div>
+                         
+                         <div class="container123">
+                         <img src="img/aboutus/guests/girl.svg" width="50" height="50" alt="Аватар">
+                         <p>Что входит в стоимость проживания?</p>
+                         </div>
+                              
+                         <div class="container123 huy">
+                              <img src="img/logo_new.svg" width="50" height="50" alt="Аватар" class="right">
+                              <p>
+                                   <ul>
+                                        <li>Индивидуальный бокс для вашего питомца, где можно разместить его личные вещи;</li>
+                                        <li>Регулярная обработка помещений от микробов;</li>
+                                        <li>Влажная уборка боксов 2 раза в день;</li>
+                                        <li>Фото и видео - отчеты;</li>
+                                        <li>Для собак - сухой корм премиум, выгул, одноразовые впитывающие пеленки при необходимости;</li>
+                                        <li>Для кошек - сухой корм премиум, наполнитель для лотка, игры;</li>
+                                        <li>Связь по телефону или whatsapp ежедневно.</li>
+                                   </ul>
+                              </p>
+                         </div>
+
+                         <div class="container123">
+                              <img src="img/aboutus/guests/girl-com.svg" width="50" height="50" alt="Аватар">
+                              <p>Есть ли выгул? Как происходит?</p>
+                         </div>
+                              
+                         <div class="container123 darker">
+                              <img src="img/logo_new.svg" width="50" height="50" alt="Аватар" class="right">
+                              <p>Рядом с гостиницей располагается парк с набережной для выгула собак (мы следим за культурой выгула). Для кошек установлены многоуровневые номера. Все животные также могут полежать на диване или поиграть в общей зоне по желанию владельца.</p>
+                         </div>
+
+                         <div class="container123">
+                              <img src="img/aboutus/guests/man.svg" width="50" height="50" alt="Аватар">
+                              <p>Что если животное подцепит блох, клещей или болезнь от других животных?</p>
+                         </div>
+                              
+                         <div class="container123 darker">
+                              <img src="img/logo_new.svg" width="50" height="50" alt="Аватар" class="right">
+                              <p>Чтобы избежать таких случаев, мы обеззараживаем воздух в помещении при помощи рециркулятора. Также 2 раза в день проводится влажная уборка дезинфецирующими средствами. В целях поддержания здоровья наших питомцев мы также рекомендуем хозяевам не забывать об обработке животных от паразитов, которая должна проводиться раз в 3 месяца, и не пропускать сроки ежегодной вакцинации.</p>
+                         </div>
+                    </div>
+               </div>
+		</section>       
+          <footer>
+               <div class="cont cont-footer">
+                   <div class="listoftitles">
+                         <div class="headline"><p>Меню</p></div>
+                         <hr  width="180" size="1" color="#997843" />
+                         <div class="block1">
+                              <div><p><a href="index.html">Главная</a></p></div>
+                              <div><p><a href="conditions.html">Условия</a></p></div>
+                              <div><p><a href="prices.html">Цены</a></p></div>
+                              <div><p><a href="workers.html">Сотрудники</a></p></div>
+                              <div><p><a href="reviews.html">Отзывы</a></p></div>
+                              <div><p><a href="contacts.html">Контакты</a></p></div>
+                         </div>
+                    </div>
+                    <div class="block">
+                         <div class="headline"><p>Режим работы</p></div class="headline">
+                         <hr  width="180" size="1" color="#997843" />
+                         <div class="block1">
+                              <div>
+                                   <img src="img/socials/clock.svg" width="20" height="20" alt="">
+                                   <p>Понедельник-Воскресение:<br>14:00-22:00</p>
+                              </div>
+                              <br>
+                              <div>
+                                   <img src="img/socials/pin.svg" width="20" height="20" alt="">
+                                   <p>Ленина, 11<br>Иркутск, Россия</p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="block">
+                         <div class="headline"><p>Контакты</p></div class="headline">
+                         <hr  width="180" size="1" color="#997843" />
+                         <div class="block1">
+                              <div>
+                                   <img src="img/socials/instagram.svg" width="20" height="20" alt="">
+                                   <p><a href=#>ChillForAnimals</a></p>
+                              </div>
+                              <div>
+                                   <img src="img/socials/facebook.svg" width="20" height="20" alt="">
+                                   <p><a href=#>ChillForAnimals</a></p class="header-p">
+                              </div>
+                              <div>
+                                   <img src="img/socials/twitter.svg" width="20" height="20" alt="">
+                                   <p><a href=#>ChillForAnimals</a></p class="header-p">
+                              </div>
+                              <div>
+                                   <img src="img/socials/phone.svg" width="20" height="20" alt="">
+                                   <p><a href=#>8-950-076-88-14</a></p class="header-p">
+                              </div>
+                              <div>
+                                   <img src="img/socials/email.svg" width="20" height="20" alt="">
+                                   <p><a href=#>chillFA@gmail.com</a></p class="header-p">
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </footer> 
+     </body> 
+</html>

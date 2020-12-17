@@ -1,0 +1,4797 @@
+.CKOK { color: #E8FDAB; }
+.CKOK { color: #A8EF88; } /*старый*/
+.CKOK { color: rgb(225, 255, 176); }/*новый*/
+.CKOK { color: rgb(153, 120, 67); }
+.CKOK { color: #ffdd95; }
+.CKOK { color: #77C131; }
+.CKOK { color: #F6E8B1; }
+.CKOK { color: rgb(246, 255, 222); }/*Новый фон*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color:  #F6FFDE ;
+    color: #1F2326;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+}
+.main-header{
+    width: 80%;
+    display: flex;
+    align-items:center;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+.main-header div{
+    text-align: center;
+}
+.alla{
+    color: #1F2326;
+    text-decoration: none;
+}
+.alla:hover {
+    color: #997843;
+    text-decoration: underline;
+}
+.header-p{
+    font-size: 1.2em;
+    color:#1F2326;
+    text-decoration: none;
+}
+.link-in-header{
+    text-decoration: none;
+    color:#1F2326;
+    padding-bottom: 2%;
+}
+.link-in-header:hover{
+    text-decoration: underline;
+    color:#997843;
+}
+/*стили футер*/
+footer {
+    margin-top: 5em;
+    background-color: #E1FFB0;
+}
+.cont-footer p{
+    font-size: 1.2em;
+    line-height: 1.8em;
+}
+.cont-footer .listoftitles p{
+    line-height: 1.5em;
+}
+.cont-footer a:hover{
+    color: #997843;
+    text-decoration: underline;
+}
+.cont-footer {
+    height: 15em;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    /* margin: 3.5% 0; */
+}
+.cont-footer>div{
+    padding-top:10px;
+}
+.cont-footer a{
+    text-decoration: none;
+    font-size: 1em;
+    color:#1F2326;
+}
+.cont-footer .headline{
+    color:#997843;
+}
+.contforslider{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.indexarticle{
+    padding:50px 0;
+}
+.block {
+    display: flex;
+    flex-direction: column;
+}
+.block1>div{
+    display: flex;
+    flex-direction: row;
+}
+.block1{
+    padding-top:20px;
+}
+.block1>div>img{
+    margin-right: 10px;
+    display:flex;
+    align-self: center;
+}
+/* .main-header .login .p .a{
+    margin-bottom: 0;
+    padding-bottom: 0;
+} */
+.cardforeditprofile, .cardforeditpet{
+    margin: 3% 0 5% 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+    width:90%;
+    border-radius: 0.2em;
+    background: rgba(225, 255, 176, 0.5);
+    /* justify-content: flex-end; */
+    align-items: flex-start;
+}
+.cardforeditprofile .imgforcard,.cardforeditpet .imgforcard{
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+}
+.cardforeditprofile .descr, .cardforeditpet .descr{
+    width: 55%;
+    padding: 1% 2% 0 2%;
+}
+.txtareaforcomment{
+    width: 100%;
+    height: 100px;
+}
+.cardforeditprofile .imgforcard img,.cardforeditpet .imgforcard img{
+    margin:5% 0 5% 5%;
+}
+.cardforeditprofile .usereditbuttons,.cardforeditpet .usereditbuttons{
+    padding-left: 3%;
+    margin: 5% 0!important;
+}
+.cardforeditprofile .myprofilebtn, .cardforeditpet .myprofilebtn{
+    margin: 0 2%!important;
+}
+/*стили футер*/
+.contacts {
+    /* flex: 1;k */
+    width: calc(100% / 6);
+    order: 5;
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+    width: calc(100% / 6);
+    order:1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.logo>img{
+    order:1;
+    padding-top:2%;
+    width: 70px;
+    height: 70px;
+}
+.logo>p{
+    order:2;
+    padding:3% 0 2% 0;
+}
+
+.login .beautybutton a{
+    padding: 15px 30px;
+    margin: 0 10px;
+}
+.login .beautybutton{
+    padding-top:7%;
+}
+.login .header-p{
+    padding:6% 0 2% 0;
+}
+.location{
+    display: flex;
+    align-items:center;
+    width: calc(100% / 6);
+    order: 4;
+}
+.location p{
+    padding-left: 0.5em;
+}
+.mail{
+    display: flex;
+    align-items:center;
+    flex: 1;
+    order: 2;
+    flex-basis: 1.2em;
+    /* flex-grow: 1; */
+}
+.mail p{
+    padding-left: 1em;
+}
+.clock{
+    display: flex;
+    align-items:center;
+    width: calc(100% / 6);
+    order:3;
+}
+.clock p{
+    padding-left: 0.5em;
+}
+.phone{
+    display: flex;
+    align-items: center;
+    width: calc(100% / 6);
+    order: 2;
+}
+.phone p{
+    padding-left: 0.5em;
+}
+.login{
+    flex:1;
+    order:6;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.login p{
+    order:2;
+    flex:1;
+    padding-bottom:2%;
+}
+.social a {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    float: left;
+    background:#F6FFDE;
+    /* background:#F6E8B1; */
+     border: 1px solid black;/* #A8EF88; */
+    /* box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1); */
+    border-radius: 6px;
+    padding: 6px;
+    color: #000;
+}
+.facebook a:hover {background: #3b5998; color: #fff; border-radius: 5px;}
+.vk a:hover {background: #5d84ae; color: #fff; border-radius: 5px;}
+
+.instagram a:hover {
+    color: #fff;
+    border-radius: 5px;
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+
+
+.instagram,.facebook{
+    margin-right: 10px;
+}
+.aboutus{
+    padding: 4em 0;
+    display: flex;
+    flex-direction: row;  
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+.aboutus div{
+    /* border: 5px solid orangered; */
+    text-align: center;
+}
+.aboutus p{
+    font-size: 1.3em;
+    padding-top: 20px;
+}
+.cont-insta{
+    /* padding-bottom: 5%; */
+    display: flex;
+    justify-content:space-around;
+}
+h1{
+    color:#8C6249;
+    font-size: 3.5em;
+    text-align: center;
+    padding:1% 0;
+}
+h2{
+    color:#8C6249;
+    font-size: 3em;
+    text-align: center;
+    padding:3.5% 0;
+}
+h3{
+    color:#8C6249;
+    font-size: 2em;
+    text-align: center;
+}
+h4{
+    color:#8C6249;
+    font-size: 1.5em;
+    text-align: left;
+}
+header{
+    background-color: #E1FFB0;
+}
+div{
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.cont-workers {
+    background-color:#E1FFB0;
+    color: black;
+    padding-bottom: 2%;
+}
+.ourteam{
+    text-align: center;
+    padding:4% 15% 2% 15%;
+    font-size: 1.5em;
+    line-height: 1.7em;
+}
+/* .cont-workers p{
+    text-align: center;
+    padding:4% 15% 2% 15%;
+    font-size: 1.5em;
+    line-height: 1.7em;
+    color: red;
+} */
+.workerscontent{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.workerscontent>figure {
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 1rem;
+    padding: 0rem;
+    border-radius: 0.2em;
+    background-color: #F6FFDE;
+}
+.workerscontent>figure>img{
+    -moz-border-radius: 0.2em 0.2em 0 0; /* закругление для старых Mozilla Firefox */
+    -webkit-border-radius: 0.2em 0.2em 0 0; /* закругл. для старых Chrome и Safari */
+    -khtml-border-radius: 0.2em 0.2em 0 0; /* закругл.для брауз.Konquerer сист. Linux */
+    border-radius: 0.2em 0.2em 0 0; /* закругление углов для всех, кто понимает */
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    min-height: 100%;
+    align-items: stretch;
+    flex-basis: auto;
+}
+.cards-worker{
+    padding:3% 0;
+    width:85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.div-for-workers{
+    display: flex;
+    flex-direction: row;  
+    justify-content: center;
+}
+.card{
+    display: flex;
+    flex: 0 0 40%;
+    background: #E1FFB0;
+    border-radius: 0.2em;
+    flex-direction: column;  
+    justify-content: center; 
+    align-items:stretch;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 1rem;
+}
+.room-card{
+    display: flex;
+    background: #E1FFB0;
+    border-radius: 0.2em;
+    flex-direction: column;  
+    justify-content: center; 
+    align-items:stretch;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 1rem;
+    width: 45%;
+}
+.priceofroom{
+    flex-basis:1em;
+}
+.roomimg>p{
+    text-align:center;
+}
+.room-img img{
+    -moz-border-radius: 0.2em 0.2em 0.2em 0.2em; /* закругление для старых Mozilla Firefox */
+    -webkit-border-radius:0.2em 0.2em 0.2em 0.2em; /* закругл. для старых Chrome и Safari */
+    -khtml-border-radius: 0.2em 0.2em 0.2em 0.2em; /* закругл.для брауз.Konquerer сист. Linux */
+    border-radius: 0.2em 0.2em 0.2em 0.2em; /* закругление углов для всех, кто понимает */
+}
+.roomimg{
+    margin-top: 20px;
+}
+.priceofroom{
+    margin: 20px 0;
+    font-size: 2em;
+    text-transform: uppercase;
+    color:#997843;
+    text-align: center;
+    font-weight: bold;
+}
+
+.green{
+    background-color:#E1FFB0;
+}
+/* .cards .card div{
+    display: flex;
+    justify-content: center;
+}
+*/
+.cards img{
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+
+  /*Адаптивное меню*/
+*{
+    margin:0;
+    padding:0;
+}
+#burg a{
+	display: block;
+	width: 70px;
+}
+#burg{
+	width:100%;
+	background:#997843;
+	padding: 7.5px 0 7.5px 2%;
+}
+span{
+	display: flex;
+	margin: 8px;
+	width: 30px;
+	height: 1px;
+	background:black; /**/
+	z-index: 999;
+}
+.mobile-tab{
+	display: flex;
+	width: 100%;
+	background: #997843;
+	flex-direction: column;
+}
+#desktop{
+	display: none;
+}
+.mobile-tab a{
+	font-size:1.3em;
+	color:#E8FDAB;/* black;#997843;*/
+	text-decoration: none;
+	font-weight: lighter;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.mobile-tab li{
+	list-style-type: none;
+	margin: 2% 5%;
+}
+/* } */
+.mobile-tab ul{
+	padding: 1% 0;
+}
+
+
+/*Слайдер старый!*/
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 560px;
+    display: block;
+    position: absolute;
+    transform: scale(0);
+    transition: all .7s ease-in-out;
+}
+.nadpis {
+	position: absolute;
+	font-size:4em;
+	padding: auto;
+	text-align: center;
+	background-color: #E1FFB0;
+	opacity: 0.5;
+	margin: 4% 30% 0 15%;/*(27 cktdf b cghfdf)*/
+}
+.nadpis2{
+	position: absolute;
+	font-size:5em;
+	padding: auto;
+	text-align: center;
+	background-color: #E1FFB0;
+	opacity: 0.5;
+	margin: 35% 11% 0 42%;
+
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+/*слайдер закончился*/
+/*Фиксирую меню на страницк*/
+
+/*хлебные крошки*/
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color:  #F6FFDE;
+}
+/* Display list items side by side */
+ul.breadcrumb li {
+display: inline;
+font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+padding: 8px;
+color: black;
+content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+color: #997843;
+text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+color: #997843;
+text-decoration: underline;
+}
+
+.breadcrumb>ul{
+    padding: 10px 16px;
+    list-style: none;
+    background-color:  #F6FFDE;
+}
+/* Display list items side by side */
+.breadcrumb>ul>li {
+    display: inline;
+    font-size: 18px;
+    }
+/* Add a slash symbol (/) before/behind each list item */
+.breadcrumb>ul li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+/* Add a color to all links inside the list */
+.breadcrumb>ul li a {
+    color: #997843;
+    text-decoration: none;
+}
+.breadcrumb>ul li a:hover {
+    color: #997843;
+    text-decoration: underline;
+}
+/*закончились хлебные крошки*/
+/*стили для странички aboutus.html*/
+.aboutuspage h3{
+    /* text-transform: uppercase; */
+}
+.photofrominsta{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.aboutusp-1{
+    text-align: center;
+    font-size: 1.5em;
+    padding: 0;
+    line-height: 1.6em;
+}
+.aboutuspage .photofrominsta a{
+    margin:3% 0;
+}
+.aboutuspage .content {
+    position: relative;
+    max-width: 250px;
+}
+
+.content .content-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 98%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay {
+    opacity: 1;
+}
+
+.content-image {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+.content-details p {
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    letter-spacing: 0.1em;
+}
+
+.fadeIn-bottom {
+    top: 80%;
+}
+
+
+.box-video{
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+}
+.textonimg p, .textonimg-2 p{
+    font-size:1.2em;
+}
+.textonimg{
+    position: absolute;
+    padding: auto;
+    text-align: center;
+    background-color: #E1FFB0;
+    opacity: 1;
+    margin: 2% 60% 0 10%;/*(27 cktdf b cghfdf)*/
+    padding: 2%;
+}
+.textonimg h3,.textonimg-2 h3{
+    margin-bottom:2%;
+}
+.textonimg-2{
+    position: absolute;
+    padding: auto;
+    text-align: center;
+    background-color: #E1FFB0;
+    opacity: 1;
+    margin: 36% 15% 0 55%;/*(27 cktdf b cghfdf)*/
+    padding: 2%;
+}
+.box-video p{
+    text-align: center;
+}
+.box-video div{
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+    border-radius: 0.2em;
+    background: rgba(225, 255, 176, 0.5);
+    margin-bottom: 5%;
+}
+.box-zootaxi{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    align-items: center;
+    margin:0 10%;
+}
+.box-zootaxi img,.box-zootaxi p{
+    flex:1;
+}
+.box-zootaxi p{
+    font-size: 1.3em;
+    line-height: 1.4em;
+    margin-right: 7%;
+    margin-top:2%;
+}
+.box-pluses{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-left:5%;
+}
+.box-pluses>div{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 4%;
+}
+.box-pluses>div p{
+    width: 65%;
+    font-size: 1.3em;
+    line-height: 1.4em;
+    margin-left: 4%;
+}
+.aboutuscard{
+    flex-direction: row;
+    display:flex;
+    background: rgba(225, 255, 176, 0.5);
+    /* flex:0 0 45%; */
+    width: 45%;
+    display: flex;
+    background: #E1FFB0;
+    border-radius: 0.2em;
+    /* flex-direction: column;   */
+    justify-content: center; 
+    align-items:stretch;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 1rem;
+}
+.aboutuscard>figure {
+    box-sizing: border-box;
+    margin: 1rem;
+    padding: 0rem;
+    flex:1;
+}
+.aboutuscard .descrofaboutus{
+    flex:1;
+}
+.aboutuscards{
+    flex-direction: row;
+    display:flex;
+}
+.aboutusp{
+    text-align: center;
+    font-size: 1.5em;
+    padding: 1em 0;
+    line-height: 1.6em;
+}
+.descrofaboutus p{
+    font-size:1.3em;
+    line-height: 1.7em;
+    padding:5%;
+}
+.descrofaboutus h3{
+    text-align: left;
+    padding:8% 0 0 5%;
+}
+
+.withguests .container123{
+    /* border: 2px solid #997843; */
+    background-color: rgba(225, 255, 176, 0.5);
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+    /* border-radius: 0.2em; */
+
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    width:60%;
+}
+/* Darker chat container */
+.withguests .container123 ul {
+    border-color: #ccc;
+}
+.withguests .container123 ul{
+    list-style-image: url(img/pawprint.png); /* Путь к изображению маркера */
+}
+.withguests .container123 p{
+    font-size: 1.2em;
+    padding: 2% 3%;
+    line-height: 1.3em;
+}
+.withguests .container123 ul,.withguests .container123 ol{
+    margin-left:5%;
+}
+.withguests .container123 li{
+    font-size: 1.2em;
+    padding: 1%;
+    /* line-height: 1.3em; */
+    text-decoration: none;
+}
+.withguests .container123 ul {
+    list-style-image: url(img/pawprint.svg); /* Путь к изображению маркера */
+   }
+/*стили для странички aboutus.html закончились*/
+
+
+/*стили для странички contacts.html*/
+/*стили для формы "Напишите нам"*/
+.formwriteus{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    order:2;
+    width:50%;
+}
+.formwriteus>div{
+    align-items: center;
+    flex-direction: column;
+}
+.formwriteus>input,.formwriteus>textarea{
+    width: 50%;
+    margin: 1% 0;
+    padding: 1% 2%;
+}
+.formwriteus .beautybutton{
+    display:flex;
+    justify-content: center;
+}
+.socials{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin-top: 3em;
+    flex-wrap: wrap;
+}
+.onlysocials-for-contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width:50%;
+    flex:1;
+}
+.onlysocials-for-contacts p a{
+    text-decoration: none;
+    color: #1F2326;
+}
+.onlysocials-for-contacts p a:hover{
+    text-decoration: underline;
+    color: #997843;
+} 
+.clock-location p, .onlysocials-for-contacts p{
+    /* margin-top:3%; */
+    font-size: 1.5em;
+}
+.socialnetwork{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2% 2% 2% 30%;
+}
+.socialnetwork>img{
+    padding-right: 2%;
+    display:flex;
+    align-self: center;
+}
+.map{
+    display:flex;
+    justify-content: center;
+    margin-top: 2.5%;
+    order:4;
+    padding-right: 4%;
+}
+.clock-location{
+    display: flex;
+    flex-direction: column;
+    order:3;
+    padding-left: 4%;
+    padding-top:3%;
+    width: 45%;
+    /* flex-wrap:wrap; */
+}
+.clock-location>div{
+    flex-direction:column;
+}
+
+.clock-location .workinghours, .location-contacts{
+    padding-bottom:20%;
+}
+.p-clock{
+    text-align: center;
+    line-height: 1.7em;
+}   
+.stripe{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+
+/*Стили для селектов, инпутов, текстарий*/
+select, input, textarea{
+    width: 200px;
+    border: solid 1px #CCCCCC;
+    padding: 4px;
+    outline: 0;
+    background: #F9F9F9;
+    -webkit-birder-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif; 
+    resize: none;
+    font-size: 15px;
+}
+fieldset{
+    padding: 5px 0 15px 5px;
+    border-radius: 0.2em;
+    width: 64%;
+    border: 1px solid black;
+}  
+textarea{
+    width: 81%;
+    margin: 5px 0 5px 7%;
+}
+select:hover,select:focus, input:hover,input:focus,textarea:hover,textarea:focus{
+    border-color: #A0A0A0;
+}
+/*Стили для селектов, инпутов, текстарий*/
+
+
+/*Стили для страницы с отзывами*/
+legend{
+    margin: 0 0 0 40px;
+}
+.reviewfilt{
+    display: flex;
+    flex-direction: row;
+}
+.filtersearch{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+} 
+
+.filter{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.filter select{
+    margin-left: 10px;
+}
+.filter>div{
+    width: 35%;
+    padding:1% 2%;
+    margin: 0 5%;
+    display: flex;
+    justify-content: space-around;
+    /* align-self: center; */
+}
+.filter>div select{
+    width: 100%;
+} 
+.reviews{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}  
+.review{
+    margin-top: 4%;
+    width: 55%;
+    display: flex;
+    /* flex: 0 0 40%; */
+    background: #E1FFB0;
+    border-radius: 0.2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.screen img{
+    width: 250px;
+    -moz-border-radius: 0.2em 0.2em 0.2em 0.2em; /* закругление для старых Mozilla Firefox */
+    -webkit-border-radius:0.2em 0.2em 0.2em 0.2em; /* закругл. для старых Chrome и Safari */
+    -khtml-border-radius: 0.2em 0.2em 0.2em 0.2em; /* закругл.для брауз.Konquerer сист. Linux */
+    border-radius: 0.2em 0.2em 0.2em 0.2em; /* закругление углов для всех, кто понимает */
+}
+.headerofreview{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:0 20px;
+}
+.descrofreview h4{
+    font-size: 1.3em;
+}
+.bodyofreview{
+    padding: 5% 20px;
+    line-height: 1.7em;
+}
+.footerofreview{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 20px 3% 20px;
+}
+.titleofcomment{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:center;
+    padding: 0 20px 10px 20px;
+}
+.titleofcomment>h4{
+    color:#1F2326;
+    font-size: 1.2em;
+}
+.titleofcomment img{
+    padding-right:10px;
+}
+.commentofreview h5 {
+    font-size:18px;
+    margin-bottom:10px;
+    margin-top:30px;
+}
+.commentofreview>p {
+    padding:0 20px;
+
+    /* font-size:20px; */
+}
+.commentofreview>h4 {
+    padding:0 20px;
+    /* font-size:20px; */
+}
+.commentofreview{
+    /* border: 2px dashed #1F2326; */
+    border: 2px solid #ccc;
+    background-color: #F6FFDE;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 8px 20px;
+}
+.commentofreview img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+div.stars{
+/* width: 250px; */
+    display: flex;
+/* padding-right:10px; */
+}
+  
+.stars input.star{/*//////////////*/
+display: none;
+}
+
+label.star {
+float: right;
+padding: 2px;
+font-size: 32px;
+color: #444 ;
+transition: all .2s;
+}
+
+.stars input.star:checked ~ label.star:before {/*//////////////*/
+content:'\f005';
+color: #FD4;
+transition: all .25s;
+}
+
+
+.stars input.star-5:checked ~ label.star:before {/*//////////////*/
+color:#FE7;
+text-shadow: 0 0 20px #952;
+}
+
+.stars input.star-1:checked ~ label.star:before {/*//////////////*/
+color: #F62;
+}
+
+label.star:hover{
+transform: rotate(-15deg) scale(1.3);
+}
+
+label.star:before{
+content:'\f006';
+font-family: FontAwesome;
+}
+/*Пагинатор*/
+.pagination {
+display: flex;
+justify-content: center;
+margin-top: 5%;
+}
+.pagination a {
+color: black;
+/* float: left; */
+padding: 8px 16px;
+text-decoration: none;
+} 
+.pagination a.active {
+background-color: #997843;
+color: white;
+border-radius: 3px;
+}
+
+.pagination a:hover:not(.active) {background-color: #eee; border-radius: 3px;}
+/*Пагинатор закончился*/
+
+
+
+/*Стили для странички prices.html*/
+.cont-prices{
+    background-color: #E1FFB0;
+}
+.card-prices{
+    background: #F6FFDE;
+}
+.descrfirst{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.descrsecond{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 2.5%;
+    padding-left: 11%;
+}
+.descrsecond>div{
+    padding: 2.5% 6% 0 0;
+    flex-basis: 70px;
+}
+.descrsecond p{
+    line-height: 1.5em;
+
+}
+.descrsize, .descrcountofplace{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex:1;
+    padding-top: 7%;
+}
+.descrsize>h4,.descrcountofplace>h4{
+    font-size: 1.3em;
+}
+.descrsize>p,.descrcountofplace>p{
+    padding-top: 2.5%;
+}
+.description{
+    margin-top: 0;
+    /* flex-basis: 160px; */
+    font-size: 1.2em;
+}
+/*Стили для странички prices.html закончились*/
+
+
+
+
+/*Стили для странички authorization.html*/
+.enterform-auth{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.enterform-auth hr{
+    margin:0 2%;
+    width:95%;
+}
+.enterform-auth form{
+    border:1px solid #997843;
+    width: 40%;
+    /* width: 100px; */
+}
+.textreg{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.auth-forget p a{
+    color: #997843;
+    text-decoration: none;   
+}
+.auth-forget p a:hover{
+    color: #997843;
+    text-decoration: underline;
+}
+.btn-in{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.auth-log{
+    display: flex;
+    justify-content: space-between;
+    padding:0 100px;
+    padding-top: 20px;
+}
+.auth-log label{
+    display: flex;
+    align-items: center;
+}
+.auth-reg{
+    display: flex;
+    flex-direction: row;
+}
+.auth-forget{
+    display:flex; 
+    justify-content: flex-end;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*Стили для странички authorization.html закончились*/
+
+/*Стили для странички workers.html*/
+.card-workers{
+    background-color: #F6FFDE;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    border-radius: 0.2em;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 1rem 0;
+}
+.descrofworker>p{
+    text-align: left;
+    margin-left: 3em; /*40px*/
+    margin-top: 0.6em;  /*8px*/
+}
+.descrofworker>h4{
+    margin:1.2em 2.3em 0 2.3em; /*20px 40px 0 2.3em;*/
+    font-size: 1.3em;
+}
+.card-workers>figure {
+    box-sizing: border-box;
+    margin: 1rem;
+    padding: 0rem;
+}
+.card-workers>figure>figcaption{
+    text-align: center;
+    padding-top:1rem;
+    font-size: 1.2em;
+}
+/*Стили для странички с workers.html закончились*/
+
+/*Стили для красивых кнопок*/
+
+.beautybutton a{
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    padding: 20px 30px;
+    margin: 10px 20px;
+    position: relative;
+    color: black;
+    border: 1px solid rgba(119,193,49,.4);
+    background: none;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius:0.2em;
+    text-align:center;
+}
+.beautybutton>input {
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    padding: 20px 30px;
+    margin: 10px 20px;
+    position: relative;
+    color: black;
+    border: 1px solid rgba(119,193,49,.4);
+    background: none;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius:0.2em;
+    text-align:center;
+}
+.beautybutton a:before,
+.beautybutton a:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    box-sizing: border-box;
+}
+.beautybutton a:before {
+    bottom: 0;
+    left: 0;
+    border-left: 1px solid #997843;
+    border-top: 1px solid #997843;
+    transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+}
+.beautybutton a:after {
+    top: 0;
+    right: 0;
+    border-right: 1px solid #997843;
+    border-bottom: 1px solid #997843;
+    transition: 0s ease opacity .4s, .2s ease width , .2s ease height .2s;
+}
+.beautybutton a:hover:before,
+.beautybutton a:hover:after{
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+.beautybutton a:hover:before {transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;}
+.beautybutton a:hover:after {transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s;}
+.beautybutton a:hover {background: rgba(119,193,49,.2);}
+.buttonofroom{
+    text-align:center;
+    margin-bottom: 20px;
+}
+.btn-index{
+    margin-top: 2em;
+}
+.allbutton{
+    text-align:center;
+}
+.sliderbutton{
+	position: absolute;
+	margin: 25% 20% 0 60%;
+    white-space: nowrap;
+}
+/*стиль кнопок*/
+/*Стили для красивых кнопок закончились*/
+
+/*Стили для странички с условиями заселения*/
+.containerforimg{
+    display: flex; 
+    justify-content: space-around;
+}
+
+.containerforimg .cardforimg{
+    cursor: pointer;
+}
+
+.containerforimg .cardforimg .face{
+    width: 400px;
+    height: 300px;
+    transition: 0.5s;
+}
+.containerforimg .cardforimg .face.face1{
+    position: relative;
+    background: #E1FFB0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(150px);
+}
+
+.containerforimg .cardforimg:hover .face.face1{
+    background: #77C131;
+    transform: translateY(0);
+}
+.containerforimg .cardforimg .face.face1 .content{
+    opacity: 0.8;
+    transition: 0.5s;
+}
+.containerforimg .cardforimg:hover .face.face1 .content{
+    opacity: 1;
+}
+
+.containerforimg .cardforimg .face.face1 .content img{
+    max-width: 150px;
+
+}
+.containerforimg .cardforimg .face.face1 .content .imgofcond{
+    text-align: center;
+}
+.containerforimg .cardforimg .face.face1 .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: black;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.containerforimg .cardforimg .face.face2{
+    /* position: relative; */
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8); */
+    transform: translateY(-150px);
+}
+.containerforimg .cardforimg .face.face2 .content li{
+    list-style-type: circle;
+    margin: 5% 5% 5% 10%;
+}
+.containerforimg .cardforimg:hover .face.face2{
+    transform: translateY(0);
+}
+
+.containerforimg .cardforimg .face.face2 .content p{
+    margin: 0;
+    padding: 0;
+}
+/*Стили для странички с условиями заселения закончились*/
+/*Стили для странички reservation.html*/
+.low-part{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* margin: 0 20%; */
+}
+.cont-reservation{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cont-reservation .reservation{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 2% 0;
+}
+.right-column,.left-column{
+    display:flex;
+    flex-direction: column;
+}
+.left-column input{
+    width: 65%; 
+    margin: 10px 0 10px 7%;
+    padding: 6px 10px 4px 10px;   
+}
+.right-column select{
+    width: 71%; 
+    margin: 10px 0 10px 7%;
+    padding: 6px 10px 4px 10px;  
+}
+.ok{
+    margin: 5px 0 3% 7%;
+}
+.one{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 6%;
+}
+.one>label,.one-1>label{
+    padding-left:0.5em;
+}
+.one-1{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 2%;
+}
+.one input,.one-1 input{
+    display: flex;
+    flex:0 0 5%;
+}
+.right-column input{
+    width: 65%;
+    margin: 5px 0 5px 7%;
+    padding: 6px 10px 4px 10px;
+}
+.low-part textarea{
+    width: 70%;
+    margin:  2% 0;
+    padding: 1% 0 0 1%;
+    /* margin: 5px 0 5px 7%;
+    padding: 6px 10px 4px 10px; */
+} 
+.right-column>label{
+    /* margin: 5px 0 5px 16px; */
+    margin: 5px 0 5px 7%;
+    /* padding: 6px 10px 4px 17px; */
+}
+/*Стили для странички reservation.html закончились*/
+/*Стили для странички reservationlog.html*/
+.columnsorderlog{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.columnsorderlog>div{
+    width: 50%;
+    display: flex;
+    /* padding-left: 5%; */
+    padding-top: 5%; 
+} 
+.reservlog .low-part textarea{
+    width: 80%;
+    margin:  2% 0;
+    padding: 1% 0 0 1%;
+} 
+.reservation{
+    background: rgba(225, 255, 176, 0.5);
+    display: flex;
+    border-radius: 0.2em;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 1rem;
+}
+/*Стили для странички reserlog.html закончились*/
+/*Стили для странички addreview.html*/
+.addreview{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding:0 33%; */
+    border: 1px solid  #997843; 
+    width:37%;
+    margin: auto;
+    padding:20px;
+}
+.addreview input,.commentabouthotel textarea{
+    width: 80%;
+    margin: 10px 0 10px 7%;
+    padding: 6px 10px 4px 10px; 
+}
+.namephone{
+    display: flex;
+    flex-direction: column;
+}
+/* input.contSt2Inp{
+    width: 35%;
+    margin-left: 52%;
+} */
+.animalselect select{
+    width: 86%;
+    margin: 10px 0 10px 7%;
+}
+.stars>label{
+    margin: 10px 0 10px 7%;
+    font-size: 1.2em;
+}
+.addreview .stars>form{
+    margin: 10px 0 10px 3%;
+}
+.buttonsaddreview{
+    display: flex;
+    flex-direction: row;
+}
+.addreview .stars{
+    display: flex;
+    align-items: center;
+}
+.buttonsaddreview>p>a{
+    width: 100px;    
+}
+/*Стили для странички addreview.html закончились*/
+/* Общие стили для страничек личного кабинета account */
+.columnacc-1 a{
+    width: 230px;
+}
+.columnsacc{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+.columnacc-1{
+    /* flex: 0 0 30%; */
+    width: 30%;
+}
+.columnacc-2{
+    /* flex: 0 0 70%; */
+    width: 70%;
+}
+figure img{
+    -moz-border-radius: 0.2em 0.2em 0.2em 0.2em; /* закругление для старых Mozilla Firefox */
+    -webkit-border-radius: 0.2em 0.2em 0.2em 0.2em; /* закругл. для старых Chrome и Safari */
+    -khtml-border-radius: 0.2em 0.2em 0.2em 0.2em; /* закругл.для брауз.Konquerer сист. Linux */
+    border-radius: 0.2em 0.2em 0.2em 0.2em; /* закругление углов для всех, кто понимает */
+}
+/* Общие стили для страничек личного кабинета account закончились */
+
+
+
+/*Стили для странички accountmyorder.html*/
+.totalprice{
+    padding:4%;
+    margin-top:8%;
+    border:1px outset #997843;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.myorder hr{
+    margin-left: 42%;
+}
+.totalprice>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: baseline;
+}
+.totalprice>div>div:nth-child(2n+1){
+    flex:1;
+}
+.totalprice>div>div:nth-child(2n){
+    padding-top:4%; 
+    padding-left: 15px;
+    flex:1;
+}
+.columnords>div:nth-child(2n+1){
+    flex:0 0 65%;
+}
+.columnords>div:nth-child(2n){
+    flex:0 0 35%;
+}
+.columnords{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.columnord-1{
+    display: flex;
+    flex-direction: column;
+}
+.columnord-1>div{
+    display: flex;
+    flex-direction: row;
+    padding-top:4%; 
+}
+.columnord-1>div>div{
+    padding-left: 1%;
+}
+.columnord-1>div>div:nth-child(2n+1){
+    flex: 0 0 35%;
+}
+.columnord-1>div>div:nth-child(2n){
+    flex: 0 0 65%;
+}
+.columnord-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.low-row{
+    display: flex;
+    flex-direction: row;
+}
+.low-row>div:nth-child(2n){
+    flex:0 0 77.5%;
+}
+.low-row>div:nth-child(2n+1){
+    flex:0 0 22.5%;
+}
+.descrofuser .low-row>div{
+    padding-top:3%; 
+    padding-left: 1%;
+}
+
+.line-date{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top:7%;
+    flex:0 0 50%;
+}
+.line-date>div{
+    padding-top:4%;
+}
+.undertitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.undertitle>div>p{
+    align-self: center;
+    padding-left:10%;
+}
+
+h3.order{
+    padding-top:1%;
+}
+.str-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.str-1>div:nth-child(4n+1){
+    display: flex;
+    flex:0 0 17%;
+    /* border: solid 1px red; */
+}
+.str-1>div:nth-child(4n+2){
+    display: flex;
+    flex:0 0 33%;
+    /* border: solid 1px blue; */
+}
+.str-1>div:nth-child(4n+3){
+    display: flex;
+    flex:0 0 20%;
+    margin-left: 10%;
+    /* border: solid 1px blueviolet; */
+}
+.str-1>div:nth-child(4n+4){
+    display: flex;
+    flex:0 0 20%;
+    /* border: solid 1px orange; */
+}
+
+
+
+.orders fieldset{
+    padding: 0 0 0 5px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-bottom: 30px;
+} 
+.str{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.str label{
+    font-size: 1.1em;
+}
+
+.str>div:nth-child(2n+1){
+    display: flex;
+    flex:0 0 37%;
+}
+.str>div:nth-child(2n){
+    display: flex;
+    flex:0 0 63%;
+}
+
+.filterorders{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.filtersearchorders{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.filtersearchorders>fieldset{
+    width: 90%;
+    padding: 1% 2%;
+}
+.datetime{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.datetime a{
+    margin: 0;
+}
+.filterorders .inputfilter{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    padding: 7px 7px;
+    flex-wrap: wrap;
+}
+.inputfilter .time-1, .inputfilter .time-2{
+    width: 65px!important;
+    margin-left: 5px;
+}
+.inputfilter .date-1, .inputfilter .date-2{
+    width: 130px!important;
+}
+.inputfilter .forlabel{
+    min-width: 55px;
+}
+.fordateandtime{
+    padding-top:1%;
+    width:98%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex:wrap;
+}
+.first{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.filterorders .inputfilter input{
+    padding: 7px;
+    width: 230px;
+}
+.filterorders .inputfilter select{
+    padding: 7px;
+    width: 150px;
+    margin-left: 20px;
+    
+    /* background: #f69a73;
+    border-bottom: 4px solid #d87d56;
+    color: white;
+    font-size: 14px; */
+}
+/* Стили для странички accountmyprofileedit.html */
+.myprofileedit .cardforaccount figure{
+    width: 43%;
+    display: flex;
+    flex-direction: row;
+}
+.usereditbuttons{
+    padding-left: 4%;
+}
+.myprofileedit .cardforaccount .myprofilebtn a, .mypets .cardforaccount .myprofilebtn a,.mypetsedit .cardforaccount .myprofilebtn a{
+    min-width: 100px;
+    margin: 10px 20px;
+}
+.myprofileedit .usereditbuttons input, .mypetsedit .usereditbuttons input{
+    display: none;
+}
+.mypets .cardforaccount figure,.mypetsedit .cardforaccount figure{
+    width: 35%;
+}
+.myprofileedit .cardforaccount .descr{
+    width: 40%;
+}
+.mypetsedit .cardforaccount .descr{
+    width: 50%;
+}
+.myprofileedit .cardforaccount,.mypets .cardforaccount, .mypetsedit .cardforaccount{
+    flex-wrap: wrap;
+}
+.myprofileedit .usereditbuttons, .mypetsedit .usereditbuttons{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* padding-left:6%; */
+    margin: 2.3rem 0 2.5rem 1rem;
+}
+.newbutton a{
+    padding: 10px 10px;
+    margin:0;
+}
+.uploadButton {
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    padding: 10px 10px;
+    position: relative;
+    border: 1px solid rgba(119,193,49,.4);
+    border-radius:0.2em;
+    text-align:center;
+}
+.uploadButton:before,
+.uploadButton:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    box-sizing: border-box;
+}
+.uploadButton:before {
+    bottom: 0;
+    left: 0;
+    border-left: 1px solid #997843;
+    border-top: 1px solid #997843;
+    transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+}
+.uploadButton:after {
+    top: 0;
+    right: 0;
+    border-right: 1px solid #997843;
+    border-bottom: 1px solid #997843;
+    transition: 0s ease opacity .4s, .2s ease width , .2s ease height .2s;
+}
+.uploadButton:hover:before,
+.uploadButton:hover:after{
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    cursor: pointer;
+}
+.uploadButton:hover:before {transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;}
+.uploadButton:hover:after {transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s;}
+.uploadButton:hover {background: rgba(119,193,49,.2);}
+/* Стили для странички accountmyprofiledit.html */
+
+.menu-for-mobile-acc{
+    display: none;
+}
+/* Стили для странички accountmyprofile.html */
+.cardforaccount-myprofile{
+    display: flex;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+    width:100%;
+    border-radius: 0.2em;
+    background: rgba(225, 255, 176, 0.5);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    margin:3% 0 5% 0;
+}
+.cardforaccount-myprofile figure{
+    width: 40%;
+    padding:2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.cardforaccount-myprofile .descr-myprofile{
+    width: 55%;
+    display:flex;
+    flex-direction:column;
+    padding: 2%;
+}
+.descr-myprofile .allbutton{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center!important;
+}
+.cardforaccount-myprofile .descr-myprofile>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 3% 0;
+}
+.cardforaccount-pet{
+    display: flex;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+    width:100%;
+    border-radius: 0.2em;
+    background: rgba(225, 255, 176, 0.5);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    margin:3% 0 5% 0;
+}
+.cardforaccount-pet .myprofilebtn-myprofile{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.cardforaccount-pet .myprofilebtn-myprofile a{
+    min-width: 120px;
+}
+.cardforaccount-pet figure{
+    width: 40%;
+    padding:2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.cardforaccount-pet .descr-pet{
+    width: 55%;
+    display:flex;
+    flex-direction:column;
+    padding: 2%;
+}
+.cardforaccount-pet .descr-pet .extrainfo{
+    display:flex;
+    flex-direction:column;
+    align-items: start;
+}
+.cardforaccount-pet .descr-pet .extrainfo h4{
+    padding-bottom: 4%;
+}
+.cardforaccount-pet .descr-pet h4{
+    font-size:1.3em;
+}
+.cardforaccount-pet .descr-pet p{
+    font-size: 1.2em;
+}
+.cardforaccount-pet .descr-pet>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 3% 0;
+}
+.cardforaccount{
+    display: flex;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+    width:100%;
+    border-radius: 0.2em;
+    background: rgba(225, 255, 176, 0.5);
+    flex-direction: row;
+    justify-content: stretch;
+    margin-bottom: 5%;
+}
+.cardforaccount>figure{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: stretch;
+    margin: 1rem;
+}
+.cardforaccount>figure>.allimg>p{
+    text-align: center;
+    padding:7%;
+}
+.cardforaccount figure>.allimg>p>img{
+    border:2px solid rgba(119,193,49,.4);
+}
+.descr{
+    display:flex;
+    flex-direction:column;
+    width: 100%;
+    padding: 5% 5%;
+}
+.descr>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 3% 2%;
+}
+.myprofilebtn{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.myprofilebtn a{
+    margin:10px 0;
+    min-width: 100px;
+}
+.labels-1 label,.labels label{
+    font-size: 1.2em;   
+}
+.labels label{
+    color: #997843;
+}
+.myorder{
+    display: flex;
+    flex-direction: column;       
+    padding:3%;
+    margin: 5% 0;
+}
+.myorder h4{
+    font-size: 1.2em;
+    color: #997843;
+}
+.descr .extrainfo{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.descr .extrainfo .labels-1{
+    padding-top: 20px;
+}
+.mypets .descr>div>div{
+    flex:1;
+    display:flex;
+}
+.cards-mypets{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.card-mypets .allbutton p a{
+    min-width: 200px;
+}
+/*Стили для странички accountmyprofile.html закончились*/
+/*Стили для странички accountmypetsedit.html*/
+.mypets .cardforaccount .descr{
+    width: 60%;
+}
+.mypetsedit .descr>div>div:nth-child(2n+1){
+    display: flex;
+    flex:0 0 45%;
+}
+.mypetsedit .descr>div>div:nth-child(2n){
+    display: flex;
+    flex:0 0 55%;
+}
+.mypetsedit .descr select{
+    width:100%;
+}
+.mypetsedit .descr input{
+    width: 100%;
+}
+.mypetsedit .descr .specialfortextarea{
+    padding: 2% 0 0 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+}
+.mypetsedit .descr .specialfortextarea label{
+    padding: 0;
+}
+.specialfortextarea>div{
+    display:flex;
+    align-self: flex-start;
+    padding: 2% 0 0 0;
+}
+.mypetsedit .descr .specialfortextarea textarea{
+    padding: 4px;
+    width: 150%;/*ыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыы*/
+    margin: 0;
+}
+.mypetsedit .descr .specialfortextarea>div:nth-child(2n+1){
+    display: flex;
+    flex:0 0 30%;
+}
+.mypetsedit .descr .specialfortextarea>div:nth-child(2n){
+    display: flex;
+    flex:0 0 70%;
+} 
+/*Стили для странички accountmypetsedit.html закончились*/
+/*Стили для странички accountjournal.html*/
+.top-cards{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.top-cards .journal-card{
+    /* flex: 0 0 42%; */
+    width: 42%;
+}
+.journal-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.journal-card{
+    display: flex;
+    border-radius: 0.2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 1rem 0;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(225, 255, 176, 0.5);
+    padding: 3% 2% 3% 2%;
+    width: 30%;
+}
+.descrofanimalinjournal>div{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    padding:0 5%;
+    line-height: 2em;
+    flex-wrap: wrap;
+}
+.descrofanimalinjournal>.simple>.labels, .descrofanimalinjournal>.simple>.labels-1{
+    flex:1;
+}
+.task .labels{
+    width: 100%;
+}
+.task p{
+    width: 295px;
+    /* width: 85%; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.2em;
+}
+
+.filtersearchjournals{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.filtersearchjournals>fieldset{
+    width: 90%;
+    padding: 2% 3%;
+}
+.filterjournals .cols .col{
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+}
+.filterjournals .cols .col-2{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+.filterjournals .cols .col div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.filterjournals .cols .col-2 div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#appt1, #appt2{
+    width: 65px;
+}
+
+.filterjournals .col>div>label,.filterjournals .col>div>select,.filterjournals .col>div>input{
+    margin:3% 0;
+}
+.col-2>div{
+    margin:3% 0;
+}
+.filterjournals .col>div>select,.filterjournals .col>div>input{
+    /* width: 50%; */
+    width: 130px;
+}
+.col-2>div>input{
+    width: 130px;
+}
+.filterjournals .cols{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.filterjournals .cols .col select{
+    padding:6px 0;  
+}
+
+.filterjournals .cols .col input{
+    padding: 5px 7px;
+}
+.filterjournals .cols .col-2 input{
+    padding: 5px 7px;
+}
+.filterjournals .inputfilter input{
+    width: 250px;
+    margin-bottom:1.6%;
+    padding: 7px 7px;
+}
+/*Стили для странички accountjournal.html закончились*/
+/*accountjournalcard.html*/
+.journal-card-one{
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    border-radius: 0.2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 1rem 0;
+    background: rgba(225, 255, 176, 0.5);
+    padding: 3% 2% 3% 2%; */
+    /* width: 70%;
+    background-color: #E1FFB0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 0.2em;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 1rem; */
+
+    display: flex;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+    width:100%;
+    border-radius: 0.2em;
+    background: rgba(225, 255, 176, 0.5);
+    flex-direction: row;
+    margin: 5% 0;
+}
+.journal-card-more{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+    padding: 2% 2% 2% 2%;
+}
+.journal-card-gallery{
+    /* width: 40%; */
+    padding:2% 2% 2% 2%;
+    width:330px;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
+}
+.journal-card-more p,.journal-card-more h4{
+    font-size: 1.2em;
+    line-height: 1.5;
+    padding: 0.3em 0 0.6em 0;
+}
+.w-6{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+.w-12{
+    width: 100%;
+}
+/*accountjournalcard.html*/
+/*Стили для странички cardofroom.html*/
+.hotelroom{
+    padding: 2.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.hotelroom .card-room{
+    width: 70%;
+    background-color: #E1FFB0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 0.2em;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 1rem;
+}
+.hotelroom .card-room .descrofroom{
+    margin: 3%;
+    width: 45%;
+}
+.hotelroom .card-room .descrofroom p{
+    font-size: 1.2em;
+    line-height: 1.5;
+    padding: 0.6em 0 1em 0;
+}
+.hotelroom .card-room .descrofroom h3,.hotelroom .card-room .descrofroom p{
+    text-align: left;
+}
+.buttoncard{
+    width: 100%;
+    text-align: center;
+}
+.buttoncard a{
+    padding: 20px 30px;
+    margin: 0 20px 3% 20px;
+}
+
+
+
+/*Стили для странички cardofroom.html закончились*/
+/*Стили для странички chat.html*/
+.container123 {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    width:80%;
+}
+.sendmessage{
+    display: flex;
+    flex-direction: row;
+}
+.sendmessage textarea{
+    margin-left: 2%;
+}
+.sendmessage p{
+    margin-left: 7%;
+}
+.chat-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Darker chat container */
+.darker {
+    border-color: #ccc;
+    background-color: #ddd;
+}
+
+/* Clear floats */
+.container123::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Style images */
+.container123 img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+/* Style the right image */
+.container123 img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+}
+
+/* Style time text */
+.time-right {
+    float: right;
+    color: #aaa;
+}
+
+/* Style time text */
+.time-left {
+    float: left;
+    color: #999;
+}
+/*Стили для странички chat.html закончились*/
+/*Стили для странички regestration.html*/
+.enterform form{
+    border:1px solid #997843;
+    width: 40%;
+}
+.enterform{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.enterform hr{
+    margin-left: 4%;
+}
+.reg-box{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.reg-log input{
+    width: 250px;
+}
+.reg-log{
+    padding:0;
+    padding-top: 4%;
+}
+.reg-p{
+    line-height: 1.7em;
+    width: 70%; 
+    padding-top: 20px;
+}
+.checkbox-soglasie-na-obrabotku{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding:4% 0 0 0;
+    width: 100%; 
+}
+.checkbox-soglasie-na-obrabotku input{
+    display: flex;
+    flex:0 0 5%;
+}
+/*Стили для странички regestration.html закончились*/
+
+/*swiper our instagram index.html*/
+.owl-next,.owl-prev{
+    width: 40px;
+    height: 40px;
+}
+.owl-prev i, .owl-next i {
+    color: white;
+}
+.owl-prev, .owl-next {
+    position: absolute;
+    top: 40%;
+    margin-top: -10px;
+}
+.owl-prev {
+    left: 5px;
+}
+.owl-next {
+    right: 5px;
+}
+/*swiper our instagram index.html end*/
+/*swiper swiper-one index.html*/
+.cont-for-slide-with-img{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+}
+.cont-for-slide-with-img .cont-for-img{
+    width: 70%;
+}
+.enabled-div{
+    display: none;
+}
+.slider-one{
+    width: 70%!important;
+}
+.cont-for-slide-with-img .cont-for-text{
+    width: 30%;
+    background-color: rgb(225, 255, 176);
+}
+.cont-for-slide-with-img .cont-for-text>p{
+    font-size: 1.3em;
+    padding: 35% 3% 6% 3%;
+    text-align: center;
+}
+/*swiper swiper-one index.html end*/
+/*new select menu*/
+
+
+
+.minimal{
+    /* styling */
+    width: 280px;
+    background: none;
+    cursor: pointer;
+    border: thin solid rgba(119,193,49,.4);
+    border-radius:0.2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 0;
+    /* display: inline-block; */
+    font: inherit;
+    line-height: 1.5em;
+    padding: 0.5em 3.5em 0.5em 1em;
+    /* reset */
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+  /* arrows */
+select.minimal {
+    background-image:
+        linear-gradient(45deg, transparent 50%, gray 50%),
+        linear-gradient(135deg, gray 50%, transparent 50%),
+        linear-gradient(to right, #ccc, #ccc);
+    background-position:
+        calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px),
+        calc(100% - 2.5em) 0.5em;
+    background-size:
+        5px 5px,
+        5px 5px,
+        1px 1.5em;
+    background-repeat: no-repeat;
+}
+select.minimal:focus {
+    background-image:
+        linear-gradient(45deg,  rgb(153, 120, 67) 50%, transparent 50%),
+        linear-gradient(135deg, transparent 50%,  rgb(153, 120, 67) 50%),
+        linear-gradient(to right, #ccc, #ccc);
+    background-position:
+        calc(100% - 15px) 1em,
+        calc(100% - 20px) 1em,
+        calc(100% - 2.5em) 0.5em;
+    background-size:
+        5px 5px,
+        5px 5px,
+        1px 1.5em;
+    background-repeat: no-repeat;
+    border-color:  rgb(153, 120, 67);;
+    outline: 0;
+}
+.minimal:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+@media (min-width: 0) and (max-width: 568px) {
+    body#accjourn{
+        background-image: none;
+    }
+    body#reslog{
+        background-image: none;
+    }
+    body#accmyorder{
+        background-image: none;
+    }
+    body#accmypets{
+        background-image: none;
+    }
+    body#bodyaccprofile{
+        background-position: 100% 80%; 
+        background-size: 150px auto;
+    }
+    /*стили для accountjournalcard.html*/
+    .onecardofjournal .columnacc-2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .onecardofjournal .columnacc-2 h1{
+        width: 100%;
+    }
+    .divforselectmenu{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .onecardofjournal .columnacc-2 .minimal{
+        margin-left:0;
+    }
+    .journal-card-one .journal-card-more>.w-6{
+        width: 100%;
+    }
+    .journal-card-one{
+        flex-direction: column;
+        max-width: 447px;
+    }
+    .journal-card-more{
+        width: 100%;
+        padding: 2% 6%;
+    }
+    .journal-card-one .journal-card-gallery{
+        width: 100%;
+    }
+    /*стили для accountjournalcard.html*/
+    /*фильтрация myprofileedit.html*/
+    .mypetsedit .columnacc-2 h1, .myprofileedit .columnacc-2 h1{
+        width: 100%;
+    }
+    .mypetsedit .columnacc-2, .myprofileedit .columnacc-2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .cardforeditprofile,.cardforeditpet{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardforeditprofile .imgforcard, .cardforeditpet .imgforcard{
+        width: 90%;
+    }
+    .cardforeditprofile .descr, .cardforeditpet .descr{
+        width: 100%;
+    }
+    .cardforeditprofile .myprofilebtn, .cardforeditpet .myprofilebtn{
+        margin:0!important;
+        padding:0 3%!important;
+    }
+    /*фильтрация мои заказы*/
+    .filtersearchorders .inputfilter{
+        width: 100%;
+        justify-content: center;
+    }
+    .inputfilter>p{
+        width: 100%;
+    }
+    .inputfilter>p>input{
+        width: 94%!important;
+    }
+    .inputfilter .date-1, .inputfilter .date-2{
+        width: 130px!important;
+    }
+    .filterorders .inputfilter .selectforsearch{
+        width: 50%;
+        padding-top: 3%;
+    }
+    .fordateandtime .first{
+        width: 100%;
+        flex-direction: row;
+        flex-wrap:no-wrap;
+    }
+    .fordateandtime .first:nth-child(2n){
+        padding-top:3%;
+    }
+    .filterorders .inputfilter select{
+        padding: 7px;
+        width: 96%;
+        margin-left: 0px;
+    }
+    .filterorders .inputfilter input{
+        padding: 7px;
+        width: 230px;
+    }
+    .datetime{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .fordateandtime{
+        flex-direction: column;
+        padding: 3% 0;
+    }
+    .inputfilter .time-1, .inputfilter .time-2{
+        width: 75px!important;
+        margin-left: 5px;
+    }
+    /*addreview*/
+    .addreview{
+        width: 96%;
+    }
+    .buttonsaddreview .beautybutton a{
+        padding: 15px 10px;
+        margin: 0 0;
+    }
+    .buttonsaddreview{
+        justify-content: space-between;
+    }
+    /*conditions*/
+    .containerforimg{
+        flex-direction: column;
+    }
+    .containerforimg .cardforimg .face{
+        width: 85%;
+        height: 300px;
+    }
+    .conditionsbutton{
+        padding-top: 10%;
+    }
+    .cardforimg{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .face1{
+        margin-top: 7%;
+    }
+    .containerforimg .cardforimg .face.face2{
+        transform: translateY(0);
+    }
+    .containerforimg .cardforimg .face.face1{
+        transform: translateY(0);
+    }
+    /*chat*/
+    .card-for-chat{
+        width:100%!important;
+    }
+    .sendmessage p{
+        margin-left: 2%;
+    }
+
+    /* .filtersearchjournals{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .filtersearchjournals>fieldset{
+        width: 90%;
+        padding: 2% 3%;
+    } */
+    .filterjournals .center-btn{
+        display: flex;
+        width: 100%!important;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .filterjournals .cols{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .filterjournals .cols .col{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .filterjournals .cols .col-2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .filterjournals .cols .col div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .filterjournals .cols .col-2 div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #appt1, #appt2{
+        width: 65px;
+    }
+    
+    .filterjournals .col>div>label,.filterjournals .col>div>select,.filterjournals .col>div>input{
+        margin:3% 0;
+    }
+    .col-2>div{
+        margin:3% 0;
+    }
+    .filterjournals .col>div>select,.filterjournals .col>div>input{
+        /* width: 50%; */
+        width: 130px;
+    }
+    .col-2>div>input{
+        width: 130px;
+    }
+    .filterjournals .cols{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .filterjournals .cols .col select{
+        padding:6px 0;  
+    }
+    
+    .filterjournals .cols .col input{
+        padding: 5px 7px;
+    }
+    .filterjournals .cols .col-2 input{
+        padding: 5px 7px;
+    }
+    .filterjournals .inputfilter input{
+        width: 250px;
+        margin-bottom:1.6%;
+        padding: 7px 7px;
+    }
+    /*стили отзывы*/
+    .reviewfilt{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .reviewfilt .btn{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .filter{
+        justify-content: space-between;
+    }
+    .filter select{
+        margin-left: 0px;
+    }
+    .filter>div{
+        width: 47%;
+        padding:1%;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        /* align-self: center; */
+    }
+    .filtersearch>fieldset{
+        padding: 2%;
+        width: 100%!important;
+    }
+    .filtersearch{
+        padding-top:7%;
+    }
+    .reviews .review{
+        margin-top: 8%;
+        width: 100%;
+        flex-direction: column;
+    }
+    .addreview .stars>form{
+        margin: 10px 0 10px 1%;
+    }
+    .review .screenshotofreview .screen{
+        text-align: center;
+    }
+    /*стили отзывы*/
+    .top-cards .journal-card,.journal-card{
+        width:100%;
+    }
+    .cardforaccount-pet figure{
+        width: 100%;
+        padding:4% 2%;
+    }
+    .cardforaccount-pet .descr-pet{
+        width: 100%;
+        padding: 2% 5%;
+    }
+    .cardforaccount-pet .myprofilebtn-myprofile{
+        flex-direction: column;
+    }
+    .cardforaccount-myprofile figure{
+        width: 100%;
+    }
+    .cardforaccount-myprofile .descr-myprofile{
+        width: 100%;
+        padding: 2% 4%;
+    }
+    .menu-for-mobile-acc{
+        display: block;
+    }
+    .enterform-auth form{
+        width: 100%;
+    }
+    .auth-log label{
+        min-width:60px;
+    }
+    /*стили header*/
+    .main-header .clock, .main-header .login .header-p{
+        display: none;
+    }
+    .main-header{
+        flex-flow: row wrap;
+        align-items: flex-start;
+
+    }
+    .main-header .logo{
+        width: 100%;
+        padding:1% 0 0 0;
+    }
+    .main-header .login{
+        width: 50%;
+        padding:2%;
+        align-items: flex-end;
+    }
+    .main-header .phone, .main-header .location{
+        width: 100%;
+        padding:2% 30%;
+        align-self: center;
+    }
+    .main-header .contacts{
+        width: 50%;
+        padding: 3% 2%;
+    }
+    .login .beautybutton a{
+        margin: 0;
+    }
+    .login .beautybutton{
+        padding:0%;
+    }
+    .main-header .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .main-header .logo img{
+        width: 55px;
+        height: 55px;
+        padding-right:2%;
+    }
+    .logo a{
+        font-size:1.4em;
+        letter-spacing: 0.2em;
+    }
+    /*стили header закончились*/
+    .slider-one{
+        width: 100%!important;
+    }
+    .cont-for-img{
+        width: 100%!important;
+    }
+    .cont-for-text{
+        display:none;
+    }
+    .enabled-div{
+        display: block;
+    }
+    .box-aboutus{
+        width:48%;
+        padding:7.5% 0;
+    }
+    .ourrooms .cards{
+        display: flex;
+        flex-direction: column;
+        flex-wrap:no-wrap;
+    }
+    .room-card{
+        width: 100%;
+    }
+    .card{
+        width: 100%;
+    }
+    .ourrooms .card{
+        flex: 0 0 100%!important;
+    }
+    .aboutuscard{
+        flex-direction: column;
+        align-items: center;
+        display:flex;
+        width: 96%;
+    }
+    .aboutuscard .descrofaboutus{
+        padding-bottom:4%;
+    }
+    .aboutuscard .descrofaboutus h3{
+        text-align: center;
+        padding:2% 0;
+    }
+    .aboutuscard .descrofaboutus p{
+        padding: 1% 4%;
+    }
+    .box-zootaxi{
+        display: flex;
+        flex-direction: column;
+        width: 96%;
+        margin:0 2%;
+    }
+    .box-zootaxi div{
+        padding: 4% 0;
+    }
+    .box-zootaxi p{
+        margin-right: 0;
+    }
+    .photofrominsta{
+        justify-content: center;
+    }
+    .box-video{
+        display: flex;
+        flex-direction: column;
+        /* width: 100%; */
+    }
+    .box-video img{
+        width: 100%;
+        height: 100%;
+    }
+    .textonimg p, .textonimg-2 p{
+        font-size:1.2em;
+    }
+    .textonimg,.textonimg-2{
+        position: relative;
+        width: 100%;
+    }
+    .textonimg h3,.textonimg-2 h3{
+        font-size:1.4em;
+    }
+    .box-video div{
+        margin:1% 0 ;
+    }
+    .box-pluses{
+        flex-direction: column;
+    }
+    .box-pluses div{
+        width: 100%;
+        padding:3% 0;
+    }
+    .withguests .container123{
+        width: 100%;
+    }
+    .cards-worker{
+        width:100%;
+    }
+
+    .onlysocials-for-contacts{
+        width:100%;
+        padding-bottom:8%;
+    }
+    .clock-location{
+        width:100%;
+        padding-top:8%;
+    }
+    .location-contacts{
+        width:100%;
+    }
+    .map{
+        width:100%;
+        padding:0;
+    }
+    .map iframe{
+        width:100%;
+    }
+    /*стили футер*/
+    .cont-footer {
+        height: 16em;
+        justify-content: space-around;
+    }
+    .cont-footer>div{
+        padding-top:10px;
+    }
+    .listoftitles{
+        display:none;
+    }
+    .cont-footer>div{
+        padding-top:17px;
+    }
+    .indexarticle{
+        padding:50px 0;
+    }
+    /*стили футер*/
+    /*reservationstyle*/
+    .columnsorderlog, .cont-reservation .low-part{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .cont-reservation .low-part .priceofroom{
+        width:83%;
+    }
+    .reservation{
+        width: 100%!important;
+        margin: 0;
+    }
+    .columnsorderlog>div{
+        width: 100%;
+        padding-top: 3%; 
+    } 
+    .cont-reservation .low-part textarea{
+        width: 70%;
+        padding: 2% 0 0 2%;
+    }
+    .columnsorderlog>div{
+        padding-left: 0;
+    } 
+    .left-column input{
+        margin: 10px 0 10px 13%; 
+    }
+    .right-column select{
+        margin: 10px 0 10px 13%;
+    }
+    .ok{
+        margin: 5px 0 3% 13%;
+    }
+    .one{
+        padding-left: 0;
+    }
+    .one input,.one-1 input{
+        display: flex;
+        flex:0 0 5%;
+    }
+    .right-column input{
+        margin: 5px 0 5px 13%;
+    }
+    .right-column>label{
+        margin: 5px 0 5px 13%;
+    }
+    .formwriteus{
+        width:100%!important;
+    }
+    .columnacc-1{
+        display: none;
+    }
+    .columnacc-2{
+        width:100%;
+    }
+}
+@media (min-width: 569px) and (max-width: 650px) {
+    body#accjourn{
+        background-image: none;
+    }
+    body#reslog{
+        background-image: none;
+    }
+    body#accmyorder{
+        background-image: none;
+    }
+    body#accmypets{
+        background-image: none;
+    }
+    body#bodyaccprofile{
+        background-position: 100% 80%; 
+        background-size: 200px auto;
+    }
+    .divforselectmenu{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .slider-one{
+        width: 100%!important;
+    }
+    .cont-for-img{
+        width: 100%!important;
+    }
+    .cont-for-text{
+        display:none;
+    }
+    .enabled-div{
+        display: block;
+    }
+    /*стили для accountjournalcard.html*/
+    .journal-card-one .journal-card-more>.w-6{
+        width: 100%;
+    }
+    .journal-card-one{
+        flex-direction: column;
+        width: 80%;
+        max-width: 500px;
+    }
+    .journal-card-more{
+        width: 100%;
+        padding: 2% 6%;
+    }
+    .journal-card-one .journal-card-gallery{
+        width: 100%;
+    }
+    .onecardofjournal .columnacc-2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .onecardofjournal .columnacc-2 h1{
+        width: 100%;
+    }
+    /*стили для accountjournalcard.html*/
+    /*фильтрация myprofileedit.html*/
+    .mypetsedit .columnacc-2 h1, .myprofileedit .columnacc-2 h1{
+        width: 100%;
+    }
+    .mypetsedit .columnacc-2, .myprofileedit .columnacc-2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .cardforeditprofile, .cardforeditpet{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardforeditprofile .imgforcard, .cardforeditpet .imgforcard{
+        width: 75%;
+    }
+    .cardforeditprofile .descr, .cardforeditpet .descr{
+        width: 100%;
+    }
+    .cardforeditprofile .myprofilebtn, .cardforeditpet .myprofilebtn{
+        margin:0!important;
+        padding:0 3%!important;
+    }
+    .filtersearchorders>fieldset{
+        width: 60%!important;
+        padding: 1% 2%;
+    }
+    .filtersearchorders .inputfilter{
+        width: 100%;
+        justify-content: center;
+    }
+    .inputfilter>p{
+        width: 100%;
+    }
+    .inputfilter>p>input{
+        width: 91%!important;
+    }
+    .inputfilter .date-1, .inputfilter .date-2{
+        width: 130px!important;
+    }
+    .filterorders .inputfilter .selectforsearch{
+        width: 50%;
+        padding-top: 2%;
+    }
+    .fordateandtime .first{
+        width: 100%;
+        flex-direction: row;
+        flex-wrap:no-wrap;
+    }
+    .fordateandtime .first:nth-child(2n){
+        padding-top:2%;
+    }
+    .filterorders .inputfilter select{
+        padding: 7px;
+        width: 92%;
+        margin-left: 0px;
+    }
+    .filterorders .inputfilter input{
+        padding: 7px;
+        width: 230px;
+    }
+    .datetime{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .fordateandtime{
+        flex-direction: column;
+        padding: 2% 0;
+    }
+    .inputfilter .time-1, .inputfilter .time-2{
+        width: 75px!important;
+        margin-left: 5px;
+    }
+    /*addreview*/
+    .addreview{
+        width: 80%;
+    }
+    .buttonsaddreview .beautybutton a{
+        padding: 15px 10px;
+        margin: 0 0;
+    }
+    .buttonsaddreview{
+        justify-content: space-between;
+    }
+    .containerforimg{
+        flex-direction: column;
+    }
+    .containerforimg .cardforimg .face{
+        width: 80%;
+        height: 300px;
+    }
+    .conditionsbutton{
+        padding-top: 10%;
+    }
+    .cardforimg{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .face1{
+        margin-top: 7%;
+    }
+    .containerforimg .cardforimg .face.face2{
+        transform: translateY(0);
+    }
+    .containerforimg .cardforimg .face.face1{
+        transform: translateY(0);
+    }
+
+    .card-for-chat{
+        width:100%!important;
+    }
+    .sendmessage p{
+        margin-left: 2%;
+    }
+    .filtersearchorders>fieldset{
+        width: 100%;
+        padding: 2% 3%;
+    }
+    .filterorders{
+        flex-wrap:wrap;
+    }
+    .filterorders .cols .col{
+        width: 100%;
+    }
+    .filterorders .center-btn{
+        display: flex;
+        width: 100%!important;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .inputfilter{
+        display: flex;
+        width: 100%!important;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .filterorders .cols .col select{
+        padding:6px 0;
+    }
+    .filterorders .cols .col input{
+        padding: 5px 7px;
+        width: 143px;
+    }
+    .filterorders .cols .col div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .filterorders .cols{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap:wrap;
+    }
+    /*стили header*/
+    .main-header .clock, .main-header .login .header-p{
+        display: none;
+    }
+    .main-header{
+        flex-flow: row wrap;
+        align-items: flex-start;
+
+    }
+    .main-header .logo{
+        width: 100%;
+        padding:5px 0 0 0;
+    }
+    .main-header .login{
+        width: 50%;
+        padding:5px;
+        align-items: flex-end;
+    }
+    .main-header .phone, .main-header .location{
+        width: 100%;
+        padding:5px 33%;
+        align-self: center;
+    }
+    .main-header .contacts{
+        width: 50%;
+        padding: 8px 2%;
+    }
+    .login .beautybutton a{
+        margin: 0;
+    }
+    .login .beautybutton{
+        padding:0%;
+    }
+    .main-header .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .main-header .logo img{
+        width: 55px;
+        height: 55px;
+        padding-right:2%;
+    }
+    .logo a{
+        font-size:1.4em;
+        letter-spacing: 0.2em;
+    }
+    /*стили header закончились*/
+    .top-cards .journal-card,.journal-card{
+        width:80%;
+    }
+    .journal-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardforaccount-pet figure{
+        width: 100%;
+        padding:4% 2%;
+    }
+    .cardforaccount-pet .descr-pet{
+        width: 100%;
+        padding: 2% 5%;
+    }
+    .cardforaccount-myprofile figure{
+        width: 100%;
+    }
+    .cardforaccount-myprofile .descr-myprofile{
+        width: 100%;
+        padding: 2% 4%;
+    }
+    .menu-for-mobile-acc{
+        display: block;
+    }
+    .enterform-auth form{
+        width: 90%;
+    }
+    .auth-log label{
+        min-width:60px;
+    }
+    .room-card{
+        width: 80%;
+    }
+    .aboutuscard{
+        width: 96%;
+    }
+    .box-aboutus{
+        width:50%;
+        padding:7.5% 0;
+    }
+    .box-zootaxi{
+        display: flex;
+        flex-direction: column;
+        width: 96%;
+        margin:0 2%;
+    }
+    .box-zootaxi div{
+        padding: 4% 0;
+    }
+    .box-zootaxi p{
+        margin-right: 0;
+    }
+    .photofrominsta{
+        justify-content: space-around;
+    }
+    .box-video img{
+        width: 100%;
+        height: 100%;
+    }
+    .textonimg p, .textonimg-2 p{
+        font-size:1.2em;
+    }
+    .textonimg,.textonimg-2{
+        position: relative;
+        width: 100%;
+    }
+    .textonimg h3,.textonimg-2 h3{
+        font-size:1.4em;
+    }
+    .box-video div{
+        margin:1% 0 ;
+    }
+    .box-pluses{
+        flex-direction: column;
+    }
+    .box-pluses div{
+        width: 100%;
+        padding:3% 0;
+    }
+    .withguests .container123{
+        width: 90%;
+    }
+    .cards-worker{
+        width:100%;
+    }
+    /*стили отзывы*/
+    .reviewfilt{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .reviewfilt .btn{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .filter{
+        justify-content: space-between;
+    }
+    .filter select{
+        margin-left: 0px;
+    }
+    .filter>div{
+        width: 47%;
+        padding:1%;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        /* align-self: center; */
+    }
+    .filtersearch>fieldset{
+        padding: 2%;
+        width: 100%!important;
+    }
+    .filtersearch{
+        padding-top:7%;
+    }
+    .reviews .review{
+        margin-top: 8%;
+        width: 100%;
+        flex-direction: column;
+    }
+    .addreview .stars>form{
+        margin: 10px 0 10px 1%;
+    }
+    .review .screenshotofreview .screen{
+        text-align: center;
+    }
+    /* .reviews .review{
+        margin-top: 8%;
+        width: 100%;
+        flex-direction: column;
+    }
+    .addreview .stars>form{
+        margin: 10px 0 10px 1%;
+    }
+    .descrofreview .footerofreview{
+        flex-direction: column;
+    }
+    .review .screenshotofreview .screen{
+        text-align: center;
+    }
+    .footerofreview>h4, .footerofreview>div{
+        align-self: flex-start;
+    } */
+    /*стили отзывы*/
+    /*стили contacts.html*/
+    .onlysocials-for-contacts{
+        width:100%;
+        padding-bottom:8%;
+    }
+    .clock-location{
+        width:100%;
+        padding-top:8%;
+    }
+    .location-contacts{
+        width:100%;
+    }
+    .map{
+        width:100%;
+        padding:0;
+    }
+    .map iframe{
+        width:100%;
+    }
+    .formwriteus{
+        width:100%!important;
+    }
+    /*стили contacts.html end*/
+    /*стили футер*/
+    .cont-footer {
+        height: 16em;
+        justify-content: space-around;
+    }
+    .cont-footer>div{
+        padding-top:10px;
+    }
+    .listoftitles{
+        display:none;
+    }
+    .cont-footer>div{
+        padding-top:17px;
+    }
+    .indexarticle{
+        padding:50px 0;
+    }
+    /*стили футер*/
+
+    .columnsorderlog, .cont-reservation .low-part{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .cont-reservation .low-part .priceofroom{
+        width:83%;
+    }
+    .reservation{
+        width: 100%!important;
+        margin: 0;
+    }
+    .columnsorderlog>div{
+        width: 100%;
+        padding-top: 3%; 
+    } 
+    .cont-reservation .low-part textarea{
+        width: 70%;
+        padding: 2% 0 0 2%;
+    }
+    .columnsorderlog>div{
+        padding-left: 0;
+    } 
+    .left-column input{
+        margin: 10px 0 10px 13%; 
+    }
+    .right-column select{
+        margin: 10px 0 10px 13%;
+    }
+    .ok{
+        margin: 5px 0 3% 13%;
+    }
+    .one{
+        padding-left: 0;
+    }
+    .one input,.one-1 input{
+        display: flex;
+        flex:0 0 5%;
+    }
+    .right-column input{
+        margin: 5px 0 5px 13%;
+    }
+    .right-column>label{
+        margin: 5px 0 5px 13%;
+    }
+    .columnacc-1{
+        display: none;
+    }
+    .columnacc-2{
+        width:100%;
+    }
+}
+@media (min-width: 651px) and (max-width: 900px) {
+    body#accjourn{
+        background-image: none;
+    }
+    body#reslog{
+        background-position: 5% 77%;
+        background-size: 220px auto;
+    }
+    body#accmyorder{
+        background-image: none;
+    }
+    body#accmypets{
+        background-image: none;
+    }
+    body#bodyaccprofile{
+        background-position: 100% 70%; 
+        background-size: 200px auto;
+    }
+    .divforselectmenu{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .enabled-div{
+        display: none;
+    }
+    .slider-one{
+        width: 100%!important;
+    }
+    .cont-for-img{
+        width: 63%!important;
+    }
+    .cont-for-slide-with-img .cont-for-text{
+        width: 37%!important;
+    }
+    .cont-for-slide-with-img .cont-for-text>p{
+        font-size: 1.3em;
+        padding: 12% 3% 6% 3%;
+        text-align: center;
+    }
+    /*стили для accountjournalcard.html*/
+    .journal-card-one .journal-card-more>.w-6{
+        width: 100%;
+    }
+    .journal-card-one{
+        flex-direction: column;
+        width: 80%;
+        max-width: 500px;
+    }
+    .journal-card-more{
+        width: 100%;
+        padding: 2% 6%;
+    }
+    .journal-card-one .journal-card-gallery{
+        width: 100%;
+    }
+    .onecardofjournal .columnacc-2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .onecardofjournal .columnacc-2 h1{
+        width: 100%;
+    }
+    /*стили для accountjournalcard.html*/
+    @-moz-document url-prefix() {
+        .cardforeditprofile .descr, .cardforeditpet .descr{
+            padding-left:12%;
+        }
+        
+    }
+    /*фильтрация myprofileedit.html*/
+    .cardforeditprofile{
+        max-width: 590px;
+    }
+    .cardforeditpet{
+        max-width: 730px;
+    }
+    .cardforeditprofile, .cardforeditpet{
+        width: 100%;
+    }
+    .cardforeditprofile .descr{
+        padding-left:12%;
+    }
+    .cardforeditprofile .descr, .cardforeditpet .descr{
+        width:55%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        /* padding-left:10%; */
+    }
+    .cardforeditpet .imgforcard{
+        width: 45%;
+    }
+    .cardforeditpet .imgforcard>img{
+        min-width: 200px;
+        height: 100%;
+    }
+    .cardforeditprofile .descr .str,.cardforeditpet .descr .str{
+        flex-wrap: wrap;
+    }
+    .cardforeditprofile .descr .str .labels, .cardforeditpet .descr .str .labels{
+        min-width: 150px;
+    }
+    .mypetsedit .columnacc-2 h1, .myprofileedit .columnacc-2 h1{
+        width: 100%;
+    }
+    .mypetsedit .columnacc-2, .myprofileedit .columnacc-2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .cardforeditprofile{
+        flex-direction: row;
+        align-items: center;
+    }
+    .cardforeditprofile .myprofilebtn, .cardforeditpet .myprofilebtn{
+        margin:0!important;
+        padding:0 3%!important;
+    }
+    .filtersearchorders>fieldset{
+        width: 60%!important;
+        padding: 1% 2%;
+    }
+    .filtersearchorders .inputfilter{
+        width: 100%;
+        justify-content: center;
+    }
+    .inputfilter>p{
+        width: 100%;
+    }
+    .inputfilter>p>input{
+        width: 91%!important;
+    }
+    .inputfilter .date-1, .inputfilter .date-2{
+        width: 130px!important;
+    }
+    .filterorders .inputfilter .selectforsearch{
+        width: 50%;
+        padding-top: 2%;
+    }
+    .fordateandtime .first{
+        width: 100%;
+        flex-direction: row;
+        flex-wrap:no-wrap;
+    }
+    .fordateandtime .first:nth-child(2n){
+        padding-top:2%;
+    }
+    .filterorders .inputfilter select{
+        padding: 7px;
+        width: 92%;
+        margin-left: 0px;
+    }
+    .filterorders .inputfilter input{
+        padding: 7px;
+        width: 230px;
+    }
+    .datetime{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .fordateandtime{
+        flex-direction: column;
+        padding: 2% 0;
+    }
+    .inputfilter .time-1, .inputfilter .time-2{
+        width: 75px!important;
+        margin-left: 5px;
+    }
+    /*стили отзывы*/
+    .reviewfilt{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .reviewfilt .btn{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .filter{
+        justify-content: space-between;
+    }
+    .filter select{
+        margin-left: 0px;
+    }
+    .filter>div{
+        width: 47%;
+        padding:1%;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        /* align-self: center; */
+    }
+    .filtersearch>fieldset{
+        padding: 2%;
+        width: 80%!important;
+    }
+    .filtersearch{
+        padding-top:7%;
+    }
+    .reviews .review{
+        margin-top: 8%;
+        width: 100%;
+        /* flex-direction: column; */
+    }
+    .descrofreview{
+        width: 55%;
+    }
+    .screenshotofreview{
+        width: 45%;
+    }
+    .addreview .stars>form{
+        margin: 10px 0 10px 1%;
+    }
+    .descrofreview .footerofreview{
+        flex-direction: column;
+    }
+    .review .screenshotofreview .screen{
+        text-align: center;
+    }
+    .footerofreview>h4, .footerofreview>div{
+        align-self: flex-start;
+    }
+    /*стили отзывы*/
+    /*addreview*/
+    .addreview{
+        width: 70%;
+    }
+    .buttonsaddreview .beautybutton a{
+        padding: 15px 10px;
+        margin: 0 0;
+    }
+    .buttonsaddreview{
+        justify-content: space-between;
+    }
+    .containerforimg{
+        flex-direction: column;
+    }
+    .containerforimg .cardforimg .face{
+        width: 70%;
+        height: 300px;
+    }
+    .conditionsbutton{
+        padding-top: 10%;
+    }
+    .cardforimg{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .face1{
+        margin-top: 7%;
+    }
+    .containerforimg .cardforimg .face.face2{
+        transform: translateY(0);
+    }
+    .containerforimg .cardforimg .face.face1{
+        transform: translateY(0);
+    }
+    .card-for-chat{
+        width:100%!important;
+    }
+    .sendmessage p{
+        margin-left: 2%;
+    }
+    .filtersearchorders>fieldset{
+        width: 90%;
+        padding: 2% 3%;
+    }
+    .filterorders{
+        flex-wrap:wrap;
+    }
+    .filterorders .cols .col{
+        width: 45%;
+    }
+    .filterorders .center-btn{
+        display: flex;
+        width: 100%!important;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .inputfilter{
+        display: flex;
+        width: 100%!important;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .filterorders .cols .col select{
+        padding:6px 0;
+    }
+    .filterorders .cols .col input{
+        padding: 5px 7px;
+        width: 143px;
+    }
+    .filterorders .cols .col div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .filterorders .cols{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap:wrap;
+    }
+    /*стили header*/
+    .main-header .clock, .main-header .login .header-p{
+        display: none;
+    }
+    .main-header{
+        flex-flow: row wrap;
+        align-items: flex-start;
+    }
+    .main-header .logo{
+        width: 70%;
+        padding:10px 0 5px 0;
+    }
+    .main-header .phone, .main-header .location, .main-header .contacts{
+        width: calc(100% / 3);
+        padding:5px;
+    }
+    .main-header .login{
+        order: 2;
+        padding: 25px 0 5px 0;
+    }
+    .main-header .phone{
+        order: 3;
+    }
+    .main-header .contacts{
+        /* width: 50%; */
+        padding: 1% 2% 1% 5%;
+    }
+    .login .beautybutton a{
+        margin: 0;
+    }
+    .login .beautybutton{
+        padding:0%;
+    }
+    .main-header .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .main-header .logo img{
+        width: 55px;
+        height: 55px;
+        padding-right:2%;
+    }
+    .logo a{
+        font-size:1.4em;
+        letter-spacing: 0.2em;
+    }
+    /*стили header закончились*/
+    .top-cards .journal-card,.journal-card{
+        width:70%;
+    }
+    .journal-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardforaccount-pet figure{
+        width: 40%;
+        padding:4% 0;
+    }
+    .cardforaccount-pet figure img{
+        width: 100%;
+        height: 100%;
+    }
+    .cardforaccount-pet .descr-pet{
+        /* width: 100%; */
+        padding: 2% 0;
+    }
+    .cardforaccount-myprofile figure{
+        width: 35%;
+    }
+    .cardforaccount-myprofile figure img{
+        width: 100%;
+        height: 100%;
+    }
+    .cardforaccount-myprofile .descr-myprofile{
+        width: 60%;
+        padding: 2% 4%;
+    }
+    .enterform-auth form{
+        width: 70%;
+    }
+    .auth-log label{
+        min-width:60px;
+    }
+    .room-card{
+        width: 65%;
+    }
+    .box-aboutus{
+        width:50%;
+        padding:7.5% 0;
+    }
+    .aboutuscard{
+        width: 96%;
+        max-width: 572px;
+    }
+    .box-zootaxi{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin:0 5%;
+    }
+    .box-zootaxi div{
+        padding: 4% 0;
+    }
+    .box-zootaxi p{
+        margin-right: 0;
+    }
+    .box-video img{
+        width: 100%;
+        height: 100%;
+    }
+    .textonimg p, .textonimg-2 p{
+        font-size:1.2em;
+    }
+    .textonimg,.textonimg-2{
+        position: relative;
+        width: 100%;
+    }
+    .textonimg h3,.textonimg-2 h3{
+        font-size:1.4em;
+    }
+    .box-video div{
+        margin:1% 0 ;
+    }
+    .box-pluses{
+        flex-direction: column;
+    }
+    .box-pluses div{
+        width: 100%;
+        padding:3% 0;
+    }
+    .withguests .container123{
+        width: 80%;
+    }
+    .cards-worker{
+        width:100%;
+    }
+    .onlysocials-for-contacts{
+        width:100%;
+        padding-bottom:8%;
+    }
+    .formwriteus{
+        width:100%!important;
+    }
+    .clock-location{
+        width:100%;
+        padding-top:8%;
+    }
+    .location-contacts{
+        width:100%;
+        padding-bottom:10%;
+    }
+    .clock-location .workinghours{
+        padding-bottom:10%;
+    }
+    .map{
+        width:100%;
+        padding:0;
+    }
+    .map iframe{
+        width:100%;
+    }
+    /*стили футер*/
+    .cont-footer {
+        height: 16em;
+        justify-content: space-around;
+    }
+    .cont-footer>div{
+        padding-top:10px;
+    }
+    .listoftitles{
+        display:none;
+    }
+    .cont-footer>div{
+        padding-top:17px;
+    }
+    .indexarticle{
+        padding:50px 0;
+    }
+    /*стили футер*/
+
+    .cont-reservation .low-part{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .cont-reservation .low-part .priceofroom{
+        width:83%;
+    }
+    .reservation{
+        width: 100%!important;
+        margin: 0;
+    }
+    .columnsorderlog{
+        flex-direction: row;
+    }
+    .columnsorderlog>div{
+        width: 45%;
+        padding-top: 3%; 
+    } 
+    .columnacc-1{
+        display: none;
+    }
+    .columnacc-2{
+        width:100%;
+    }
+    .menu-for-mobile-acc{
+        display: block;
+    }
+}
+@media (min-width: 901px) and (max-width: 1100px) {
+    body#accjourn{
+        background-image: none;
+    }
+    body#reslog{
+        background-position: 5% 77%;
+        background-size: 300px auto;
+    }
+    body#accmyorder{
+        background-image: none;
+    }
+    body#accmypets{
+        background-image: none;
+    }
+    body#bodyaccprofile{
+        background-position: 100% 70%; 
+        background-size: 200px auto;
+    }
+    .divforselectmenu{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .enabled-div{
+        display: none;
+    }
+    .slider-one{
+        width: 100%!important;
+    }
+    /* .cont-for-img{
+        width: 60%!important;
+    }
+    .cont-for-slide-with-img .cont-for-text{
+        width: 40%!important;
+    }
+    .cont-for-slide-with-img .cont-for-text>p{
+        font-size: 1.3em;
+        padding: 12% 3% 6% 3%;
+        text-align: center;
+    } */
+    /*стили header*/
+    .main-header .location, .main-header .clock, .main-header .login .header-p{
+        display: none;
+    }
+    .main-header .login, .main-header .phone, .main-header .contacts{
+        width: 20%!important;
+    }
+    .main-header{
+        flex-flow: row wrap;
+        justify-content: space-between;
+        /* align-items: flex-start; */
+    }
+    .main-header .logo{
+        order: 1;
+        padding:5px 0;
+        width: 23%!important;
+    }
+    .main-header .phone{
+        order: 2;
+        padding:5px 0;
+    }
+    .main-header .contacts{
+        order: 3;
+        padding: 5px 0;
+    }
+    .main-header .login{
+        order: 4;
+        padding: 5px 0;
+        max-width: 125px;
+    }
+    .login .beautybutton a{
+        margin: 0;
+    }
+    .login .beautybutton{
+        padding:0%;
+    }
+    .main-header .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .main-header .logo img{
+        width: 50px;
+        height: 50px;
+        padding-right:2%;
+    }
+    .main-header .header-p{
+        text-align: left;
+    }
+    /*стили header закнчились*/
+    .cardforeditpet{
+        flex-direction: row;
+        /* flex-wrap: nowrap; */
+    }
+    .cardforeditpet{
+        max-width: 730px;
+    }
+    .cardforeditprofile{
+        max-width: 590px;
+    }
+    .cardforeditprofile .descr{
+        padding-left:12%;
+    }
+    .cardforeditpet .descr{
+        width:55%;
+        padding-top: 1%;
+        padding-bottom: 0;
+        /* padding-left:10%; */
+    }
+    .cardforeditpet .imgforcard{
+        width: 45%;
+    }
+    .cardforeditpet .imgforcard>img{
+        min-width: 200px;
+        height: 100%;
+    }
+    .cardforeditprofile .descr .str,.cardforeditpet .descr .str{
+        flex-wrap: wrap;
+    }
+    .cardforeditprofile .descr .str .labels, .cardforeditpet .descr .str .labels{
+        min-width: 150px;
+    }
+    .cardforeditprofile{
+        flex-direction: row;
+        align-items: center;
+    }
+    .cardforeditprofile .myprofilebtn, .cardforeditpet .myprofilebtn{
+        margin:0!important;
+        padding:0 2%!important;
+    }
+
+    .mypetsedit .columnacc-2 h1,.myprofileedit .columnacc-2 h1{
+        width: 100%;
+    }
+    .mypetsedit .columnacc-2, .myprofileedit .columnacc-2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .inputfilter{
+        padding:0!important;
+    }
+    .first{
+        min-width: 53%;
+    }
+    .selectforsearch{
+        margin-left: 10px;
+        padding:0;
+    }
+    .selectforsearch>select{
+        margin: 0!important;
+    }
+    /*стили отзывы*/
+    .reviewfilt .btn{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .filter{
+        justify-content: space-between;
+    }
+    .filter select{
+        margin-left: 0px;
+    }
+    .filter>div{
+        width: 47%;
+        padding:1%;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        /* align-self: center; */
+    }
+    .filtersearch>fieldset{
+        padding: 2%;
+        width: 80%!important;
+    }
+    .filtersearch{
+        padding-top:7%;
+    }
+    .reviews .review{
+        margin-top: 8%;
+        width: 75%;
+        /* flex-direction: column; */
+    }
+    .descrofreview{
+        width: 55%;
+    }
+    .screenshotofreview{
+        width: 45%;
+    }
+    .addreview .stars>form{
+        margin: 10px 0 10px 1%;
+    }
+    .descrofreview .footerofreview{
+        flex-direction: column;
+    }
+    .review .screenshotofreview .screen{
+        text-align: center;
+    }
+    .footerofreview>h4, .footerofreview>div{
+        align-self: flex-start;
+    }
+    /*стили отзывы*/
+    /*addreview*/
+    .addreview{
+        width: 50%;
+    }
+    .buttonsaddreview .beautybutton a{
+        padding: 15px 10px;
+        margin: 0 0;
+    }
+    .buttonsaddreview{
+        justify-content: space-between;
+    }
+    .containerforimg{
+        flex-direction: column;
+    }
+    .containerforimg .cardforimg .face{
+        width: 50%;
+        height: 220px;
+    }
+    .conditionsbutton{
+        padding-top: 10%;
+    }
+    .cardforimg{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .face1{
+        margin-top: 3%;
+    }
+    .last-card{
+        min-height: 310px;
+    }
+    .containerforimg .cardforimg .face.face2{
+        transform: translateY(0);
+    }
+    .containerforimg .cardforimg .face.face1{
+        transform: translateY(0);
+    }
+
+    .journal-card{
+        width:42%;
+    }
+    .journal-cards{
+        display: flex;
+        /* flex-direction: column; */
+        /* align-items: center; */
+        justify-content: space-around;
+    }
+    .menu-for-mobile-acc{
+        display: block;
+    }
+    .columnacc-1{
+        display: none;
+    }
+    .columnacc-2{
+        width:100%;
+    }
+    .enterform-auth form{
+        width: 60%;
+    }
+    .auth-log label{
+        min-width:60px;
+    }
+    .box-aboutus{
+        width:22%;
+    }
+    .box-zootaxi{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin:0 5%;
+    }
+    .box-zootaxi div{
+        padding: 4% 0;
+    }
+    .box-zootaxi p{
+        margin-right: 0;
+    }
+    .textonimg{
+        margin: 2% 50% 0 5%;
+    }
+    .textonimg-2{
+        margin: 46% 5% 2% 55%;
+    }
+    .withguests .container123{
+        width: 70%;
+    }
+    .cards-worker{
+        width:100%;
+    }
+    /*style for contact.html*/
+    .onlysocials-for-contacts{
+        width:50%;
+        padding-bottom:8%;
+    }
+    .formwriteus{
+        width:50%!important;
+    }
+    .clock-location .clock{
+        padding-bottom:10%;
+    }
+    /* .mapclock{
+        width:45%;
+    }
+    .map{
+        width:60%;
+        padding:0;
+    } */
+    .map iframe{
+        width:100%;
+    }
+    /*style for contact.html end*/
+}
+@media (min-width: 1101px) and (max-width: 1300px) {
+    body#accjourn{
+        background-position: 8% 23%;
+        background-size: 300px auto;
+    }
+    body#accmypets{
+        background-position: 8% 50%;
+        background-size: 300px auto;
+    }
+    body#bodyaccprofile{
+        background-position: 100% 70%; 
+        background-size: 200px auto;
+    }
+    .slider-one{
+        width: 80%!important;
+    }
+    /*стили для accountjournalcard.html*/
+    .journal-card-one .journal-card-more>.w-6{
+        width: 100%;
+    }
+    /* .journal-card-one{
+        flex-direction: column;
+        width: 80%;
+        max-width: 405px;
+    }
+    .journal-card-more{
+        width: 100%;
+        padding: 2% 6%;
+    }
+    .journal-card-one .journal-card-gallery{
+        width: 100%;
+        margin: 2% 9% 0 9%;
+    }
+    .onecardofjournal .columnacc-2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .onecardofjournal .columnacc-2 h1{
+        width: 100%;
+    } */
+    /*стили для accountjournalcard.html*/
+    @-moz-document url-prefix() {
+        .cardforeditprofile .descr, .cardforeditpet .descr{
+            padding-left:10%;
+        }
+        
+    }
+    .cardforeditprofile .descr{
+        padding-left:7%;
+    }
+    .cardforeditpet{
+        flex-direction: row;
+        /* flex-wrap: nowrap; */
+    }
+    .cardforeditpet{
+        max-width: 630px;
+    }
+    .cardforeditprofile{
+        max-width: 630px;
+    }
+    .cardforeditpet .descr{
+        width:55%;
+        padding-top: 1%;
+        padding-bottom: 0;
+        /* padding-left:10%; */
+    }
+    .cardforeditpet .imgforcard{
+        width: 45%;
+    }
+    .cardforeditpet .imgforcard>img{
+        min-width: 200px;
+        height: 100%;
+    }
+    .cardforeditprofile .descr .str,.cardforeditpet .descr .str{
+        flex-wrap: wrap;
+    }
+    .cardforeditprofile .descr .str .labels, .cardforeditpet .descr .str .labels{
+        min-width: 150px;
+    }
+    .cardforeditprofile{
+        flex-direction: row;
+        align-items: center;
+    }
+    .cardforeditprofile .myprofilebtn, .cardforeditpet .myprofilebtn{
+        margin:0!important;
+        padding:0 2%!important;
+    }
+
+
+    .mypetsedit .columnacc-2 h1, .myprofileedit .columnacc-2 h1{
+        width: 100%;
+    }
+    .mypetsedit .columnacc-2, .myprofileedit .columnacc-2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .filtersearchorders>fieldset{
+        width: 70%!important;
+        padding: 1% 2%;
+    }
+    .inputfilter>p{
+        width: 100%;
+    }
+    .inputfilter>p>input{
+        width: 86%!important;
+        margin: 2% 0;
+    }
+    .inputfilter{
+        padding:0!important;
+        flex-direction: column;
+        width: 70%!important;
+    }
+    .datetime{
+        width: 30%!important;
+    }
+    .first{
+        min-width: 60%;
+    }
+    .first:nth-child(2n){
+        margin: 2% 0;
+    }
+    .fordateandtime{
+        flex-direction: column;
+    }
+    .selectforsearch{
+        margin-left: 0px;
+        padding:0;
+    }
+    .selectforsearch>select{
+        margin-right: 10px!important;
+        margin-left: 0!important;
+    }
+    /*стили отзывы*/
+    .reviews .review{
+        margin-top: 8%;
+        width: 64%;
+        /* flex-direction: column; */
+    }
+    .descrofreview{
+        width: 55%;
+    }
+    .screenshotofreview{
+        width: 45%;
+    }
+    .addreview .stars>form{
+        margin: 10px 0 10px 1%;
+    }
+    .descrofreview .footerofreview{
+        flex-direction: column;
+    }
+    .review .screenshotofreview .screen{
+        text-align: center;
+    }
+    .footerofreview>h4, .footerofreview>div{
+        align-self: flex-start;
+    }
+    /*стили отзывы*/
+    /*addreview*/
+    .addreview{
+        width: 40%;
+    }
+    .buttonsaddreview .beautybutton a{
+        padding: 15px 10px;
+        margin: 0 0;
+    }
+    .buttonsaddreview{
+        justify-content: space-between;
+    }
+    /*addreview*/
+    .enterform-auth form{
+        width: 40%;
+    }
+    .auth-log label{
+        min-width:60px;
+    }
+    .enabled-div{
+        display: none;
+    }
+    .textonimg{
+        margin: 2% 50% 0 5%;
+    }
+    .textonimg-2{
+        margin: 40% 15% 0 40%;
+    }
+    .cards-worker{
+        width:100%;
+    }
+}
+@media screen and (min-width: 769px){/*для бургера*/
+	.mobile-tab,#burg,#mobile{
+		display: none;
+	}
+	.bar{
+        background:#997843; 
+		display: flex;
+		width: 100%;
+		align-items:center;
+		justify-content: center;
+	}
+	.mobile-bar{
+		display: none;
+	}
+	#desktop{
+		display: flex;
+	}
+	.bar a{
+        text-decoration: none;
+		color:#F6FFDE;
+        margin:0;
+        text-transform: uppercase;
+	}
+	.bar ul{
+		display:inline-flex;
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+	.bar li{
+		/* color:black; */
+		cursor: pointer;
+		font-weight: lighter;
+		background: #997843;
+		padding: 10px 10px;
+		text-align: center;
+		width: 100px;
+		letter-spacing: 1px;
+		transition: all .2s ease-in-out;
+	}
+	.bar li:hover{
+        /* background:#ffdd95;  */
+        background: #F6FFDE; 
+        opacity: .9;
+        color: #1F2326;
+        /* box-shadow: inset 1px 1px 5px black; */
+	}
+	.bar li:hover a{
+        color: #1F2326;
+	}
+}
+.divchat{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+
+}
+.card-for-chat{
+    width:80%;
+    border-radius: 0.2em;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 1rem;
+    background: white;
+    padding:2% 0;
+}
+.time-for-msg{
+    color: #aaa;
+}
+.msg{
+    width:94%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    margin:3%;
+}
+.textmsg{
+    width:90%;
+}
+.textmsg .name{
+    padding-bottom:2%;
+    font-weight: bold;
+}
+.msg img {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 50%;
+}

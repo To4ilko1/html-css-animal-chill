@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html> 
+     <head> 
+          <meta charset="UTF-8">
+          <title>ChillForAnimals</title>
+          <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+          <link rel="stylesheet" type="text/css" href="css/style.css">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script src="script.js"></script>
+          <style>
+               body#accmypets{
+                    background:#F6FFDE url(img/threedog.png);
+                    background-attachment: scroll;
+                    background-repeat: no-repeat;
+                    background-position: 10% 48%;
+                    background-size: 300px auto;
+               }
+          </style>
+     </head> 
+     <body id="accmypets"> 
+          <header>
+               <div class="container main-header">
+                    <div class="logo">
+                         <img src="img/logo_new.svg" alt="AnimalsChill" class="logo">                         
+                         <p class="header-p"><a class="link-in-header" href="index.html">Отель для животных</a></p>
+                    </div> 
+                    <div class="phone">
+                         <img src="img/phone.png" alt="">
+                         <p class="header-p">88005553535</p>
+                    </div>
+                    <div class="clock">
+                         <img src="img/clock.png" alt="">                                                  
+                         <p class = "header-p">пн-пт: 14:00-22:00    
+                         <br>пн-пт: 11:00-22:00</p>                                                
+                    </div>
+                    <div class="location">                                  
+                         <img src="img/location.png" alt="">
+                         <p class="header-p">Ул. Ленина, д.11</p>
+                    </div>
+                    <div class="contacts">  
+                         <div class="social instagram">
+                              <a href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                         </div>
+                         <div class="social facebook">
+                              <a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>    
+                         </div>
+                         <div class="social vk">
+                              <a href="#" target="_blank"><i class="fa fa-vk fa-2x"></i></a>    
+                         </div>                                                                                   
+                    </div>
+                    <div class="login">
+                         <p class="beautybutton"><a href="authorization.html">Войти</a></p>
+                         <p class="header-p"><a class="link-in-header" href="regestration.html">Не зарегистрированы?</a></p>
+                    </div>
+               </div>
+          </header>
+          <section> 
+               <div class="bar">
+                    <nav id="desktop" class="default">
+                         <ul>
+                              <a href="index.html"><li>Главная</li></a>
+                              <a href="aboutus.html"><li>О нас</li></a>
+                              <a href="conditions.html"><li>Условия</li></a>
+                              <a href="prices.html"><li>Цены</li></a>
+                              <a href="workers.html"><li>Сотрудники</li></a>
+                              <a href="reviews.html"><li>Отзывы</li></a>
+                              <a href="contacts.html"><li>Контакты</li></a>
+                         </ul>
+                    </nav>
+               </div>
+               <div id="burg">
+                    <a href="#">
+                         <span class="bar" id="top"></span>
+                         <span class="bar" id="middle"></span>
+                         <span class="bar" id="bottom"></span>
+                    </a>
+               </div>
+               <div class="mobile-tab">
+                    <nav id="mobile">
+                         <ul>
+                              <li><a href="index.html">Главная</a></li>
+                              <li><a href="aboutus.html">О нас</a></li>
+                              <li><a href="conditions.html">Условия</a></li>
+                              <li><a href="prices.html">Цены</a></li> 
+                              <li><a href="workers.html">Сотрудники</a></li>
+                              <li><a href="reviews.html">Отзывы</a></li>
+                              <li><a href="contacts.html">Контакты</a></li> 
+                         </ul>
+                    </nav>
+               </div>
+               <script language="JavaScript">$('.mobile-tab').hide();
+                    $('#burg').on('click',function(){
+                    $('.mobile-tab').slideToggle(1000);
+                    })
+               </script>
+          </section>
+          <section>
+               <ul class="breadcrumb">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="accountmyorder.html">Личный кабинет</a></li>
+                    <li class="activem">Мои питомцы</li>
+               </ul>
+               <div class="container mypets">
+                    <div class="columnsacc">
+                         <div class="columnacc-1">
+                              <p class="beautybutton"><a href="accountmyorder.html">Мои заказы</a></p>
+                              <p class="beautybutton"><a href="reservationlog.html">Забронировать номер</a></p>
+                              <p class="beautybutton"><a href="accountmyprofile.html">Мой профиль</a></p>
+                              <p class="beautybutton"><a href="accountmypets.html">Мои питомцы</a></p>
+                              <p class="beautybutton"><a href="accountjournal.html">Журнал</a></p>
+                              <p class="beautybutton"><a href="chat.html">Общение</a></p>
+                         </div>
+                         <div class="columnacc-2">
+                              <div class="divforselectmenu">
+                                   <select class="menu-for-mobile-acc minimal" onchange="window.location.href = this.options[this.selectedIndex].value">
+                                        <option>Меню</option>
+                                        <option value="/accountmyorder.html#">Мои заказы</option>
+                                        <option value="/reservationlog.html#">Забронировать номер</option>
+                                        <option value="/accountmyprofile.html#">Мой профиль</option>
+                                        <option value="/accountmypets.html#">Мои питомцы</option>
+                                        <option value="/accountjournal.html#">Журнал</option>
+                                        <option value="/chat.html#">Общение</option>
+                                   </select>
+                              </div>
+                              <h1>Питомцы</h1>
+                              <div class="allbutton"><p class="beautybutton"><a href="accountmyorder.html">Добавить питомца</a></p></div>
+                              <div class="cards-mypets">
+                                   <div class="cardforaccount-pet">
+                                        <figure>
+                                             <div class="allimg">
+                                                  <p><img src="img/pet-1.jpg" width="300" height="300" alt=""></p>
+                                             </div>
+                                        </figure>
+                                        <div class="descr-pet">
+                                             <div>
+                                                  <h4 class="w-6">Тип</h4>
+                                                  <p><a class="alla" href=#>Кошка</a></p>
+                                             </div>
+                                             <div>
+                                                  <h4 class="w-6">Кличка</h4>
+                                                  <p><a class="alla" href=#>Бесси</a></p>
+                                             </div>
+                                             <div>
+                                                  <h4 class="w-6">Пол</h4>
+                                                  <p>Женский</p>
+                                             </div>
+                                             <div>
+                                                  <h4 class="w-6">Дата рождения</h4>
+                                                  <p>11.10.1999</p>
+                                             </div>
+                                             <div class="extrainfo">
+                                                  <h4 class="w-6">Доп. информация</h4>
+                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non sapien vitae magna mollis efficitur. Etiam rhoncus maximus ligula. Praesent</p>
+                                             </div>
+                                        </div>
+                                        <div class="myprofilebtn-myprofile">
+                                             <div class="allbutton"><p class="beautybutton"><a href="accountmyorder.html">История посещений</a></p></div>
+                                             <div class="allbutton"><p class="beautybutton"><a href="accountmypetsedit.html">Редактировать</a></p></div>
+                                        </div>
+                                   </div>
+                                   <div class="cardforaccount-pet">
+                                        <figure>
+                                             <div class="allimg">
+                                                  <p><img src="img/pet-1.jpg" width="300" height="300" alt=""></p>
+                                             </div>
+                                        </figure>
+                                        <div class="descr-pet">
+                                             <div>
+                                                  <h4 class="w-6">Тип</h4>
+                                                  <p><a class="alla" href=#>Кошка</a></p>
+                                             </div>
+                                             <div>
+                                                  <h4 class="w-6">Кличка</h4>
+                                                  <p><a class="alla" href=#>Бесси</a></p>
+                                             </div>
+                                             <div>
+                                                  <h4 class="w-6">Пол</h4>
+                                                  <p>Женский</p>
+                                             </div>
+                                             <div>
+                                                  <h4 class="w-6">Дата рождения</h4>
+                                                  <p>11.10.1999</p>
+                                             </div>
+                                             <div class="extrainfo">
+                                                  <h4 class="w-6">Доп. информация</h4>
+                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non sapien vitae magna mollis efficitur. Etiam rhoncus maximus ligula. Praesent</p>
+                                             </div>
+                                        </div>
+                                        <div class="myprofilebtn-myprofile">
+                                             <div class="allbutton"><p class="beautybutton"><a href="accountmyorder.html">История посещений</a></p></div>
+                                             <div class="allbutton"><p class="beautybutton"><a href="accountmypetsedit.html">Редактировать</a></p></div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <footer>
+               <div class="cont cont-footer">
+                    <div class="listoftitles">
+                         <div class="headline"><p>Меню</p></div>
+                         <hr  width="180" size="1" color="#997843" />
+                         <div class="block1">
+                              <div><p><a href="index.html">Главная</a></p></div>
+                              <div><p><a href="conditions.html">Условия</a></p></div>
+                              <div><p><a href="prices.html">Цены</a></p></div>
+                              <div><p><a href="workers.html">Сотрудники</a></p></div>
+                              <div><p><a href="reviews.html">Отзывы</a></p></div>
+                              <div><p><a href="contacts.html">Контакты</a></p></div>
+                         </div>
+                    </div>
+                    <div class="block">
+                         <div class="headline"><p>Режим работы</p></div>
+                         <hr  width="180" size="1" color="#997843" />
+                         <div class="block1">
+                              <div>
+                                   <img src="img/socials/clock.svg" width="20" height="20" alt="">
+                                   <p>Понедельник-Воскресение:<br>14:00-22:00</p>
+                              </div>
+                              <br>
+                              <div>
+                                   <img src="img/socials/pin.svg" width="20" height="20" alt="">
+                                   <p>Ленина, 11<br>Иркутск, Россия</p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="block">
+                         <div class="headline"><p>Контакты</p></div>
+                         <hr  width="180" size="1" color="#997843" />
+                         <div class="block1">
+                              <div>
+                                   <img src="img/socials/instagram.svg" width="20" height="20" alt="">
+                                   <p><a href=#>ChillForAnimals</a></p>
+                              </div>
+                              <div>
+                                   <img src="img/socials/facebook.svg" width="20" height="20" alt="">
+                                   <p><a href=#>ChillForAnimals</a></p class="header-p">
+                              </div>
+                              <div>
+                                   <img src="img/socials/twitter.svg" width="20" height="20" alt="">
+                                   <p><a href=#>ChillForAnimals</a></p class="header-p">
+                              </div>
+                              <div>
+                                   <img src="img/socials/phone.svg" width="20" height="20" alt="">
+                                   <p><a href=#>8-950-076-88-14</a></p class="header-p">
+                              </div>
+                              <div>
+                                   <img src="img/socials/email.svg" width="20" height="20" alt="">
+                                   <p><a href=#>chillFA@gmail.com</a></p class="header-p">
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </footer> 
+     </body> 
+</html>

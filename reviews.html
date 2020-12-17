@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html> 
+     <head> 
+          <meta charset="UTF-8">
+          <title>ChillForAnimals</title>
+          <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+          <link rel="stylesheet" type="text/css" href="css/style.css">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script src="script.js"></script>
+     </head> 
+     <body> 
+          <header>
+               <div class="container main-header">
+                    <div class="logo">
+                         <img src="img/logo_new.svg" alt="AnimalsChill" class="logo">
+                         <p class="header-p"><a class="link-in-header" href="index.html">Отель для животных</a></p>
+                    </div> 
+                    <div class="phone">
+                         <img src="img/phone.png" alt="">
+                         <p class="header-p">88005553535</p>
+                    </div>
+                    <div class="clock">
+                         <img src="img/clock.png" alt="">
+                         <p class = "header-p">пн-пт: 14:00-22:00    
+                         <br>пн-пт: 11:00-22:00</p>
+                    </div>
+                    <div class="location">
+                         <img src="img/location.png" alt="">
+                         <p class="header-p">Ул. Ленина, д.11</p>
+                    </div>
+                    <div class="contacts">  
+                         <div class="social instagram">
+                              <a href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                         </div>
+                         <div class="social facebook">
+                              <a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>    
+                         </div>
+                         <div class="social vk">
+                              <a href="#" target="_blank"><i class="fa fa-vk fa-2x"></i></a>    
+                         </div>                                                                                   
+                    </div>
+                    <div class="login">
+                         <p class="beautybutton"><a href="authorization.html">Войти</a></p>
+                         <p class="header-p"><a class="link-in-header" href="regestration.html">Не зарегистрированы?</a></p>
+                    </div>
+               </div>
+          </header>
+          <section> 
+               <div class="bar">
+                    <nav id="desktop" class="default">
+                         <ul>
+                              <a href="index.html"><li>Главная</li></a>
+                              <a href="aboutus.html"><li>О нас</li></a>                                                          
+                              <a href="conditions.html"><li>Условия</li></a>
+                              <a href="prices.html"><li>Цены</li></a>
+                              <a href="workers.html"><li>Сотрудники</li></a>
+                              <a href="reviews.html"><li>Отзывы</li></a>
+                              <a href="contacts.html"><li>Контакты</li></a>
+                         </ul>
+                    </nav>
+               </div>
+               <div id="burg">
+                    <a href="#">
+                         <span class="bar" id="top"></span>
+                         <span class="bar" id="middle"></span>
+                         <span class="bar" id="bottom"></span>
+                    </a>
+               </div>
+               <div class="mobile-tab">
+                    <nav id="mobile">
+                         <ul>
+                              <li><a href="index.html">Главная</a></li>
+                              <li><a href="aboutus.html">О нас</a></li>
+                              <li><a href="conditions.html">Условия</a></li>  
+                              <li><a href="prices.html">Цены</a></li> 
+                              <li><a href="workers.html">Сотрудники</a></li>
+                              <li><a href="reviews.html">Отзывы</a></li>
+                              <li><a href="contacts.html">Контакты</a></li> 
+                         </ul>
+                    </nav>
+               </div>
+               
+               <script language="JavaScript">$('.mobile-tab').hide();
+                    $('#burg').on('click',function(){
+                    $('.mobile-tab').slideToggle(1000);
+                    })
+               </script>
+          </section>		
+          <ul class="breadcrumb">
+               <li><a href="index.html">Главная</a></li>
+               <li class="activem">Отзывы</li>
+          </ul>
+          <div class="container rew">
+               <section>
+               <div class="title"><h1>Отзывы о нашем отеле</h1></div>
+               <div class="filtersearch">
+                    <fieldset>
+                         <legend>Фильтр и поиск</legend>
+                         <div class="reviewfilt">
+                              <div class="filter">
+                                   <div class="animal">
+                                        <select name="name">
+                                             <option>Животное</option>
+                                             <option>Кошка</option>
+                                             <option>Собака</option>
+                                             <option>Хомяки</option>
+                                        </select>
+                                   </div>
+                                   <div class="countofstars">
+                                        <select name="stars">
+                                             <option>Количество звезд</option>
+                                             <option>1</option>
+                                             <option>2</option>
+                                             <option>3</option>
+                                             <option>4</option>
+                                             <option>5</option>
+                                        </select>
+                                   </div>
+                                   <div class="daterew">
+                                        <select name="date"> 
+                                             <option>Дата</option>                                 
+                                             <option>Последняя неделя</option>
+                                             <option>Последний месяц</option>		  
+                                        </select>
+                                   </div>
+                                   <div class="showrew">
+                                        <select name="show" aria-placeholder="ffff">
+                                             <option>Показать по</option>
+                                             <option>2</option>
+                                             <option>4</option>
+                                             <option>6</option>			  
+                                        </select>
+                                   </div>
+                              </div>
+                              <div class="btn">
+                                   <div class="allbutton"><p class="beautybutton"><a href=#>Найти</a></p></div>    
+                              </div>
+                         </div>
+                    </fieldset>
+               </div>
+               <div class="allbutton"><p class="beautybutton btn-index"><a href="addreview.html">Написать отзыв</a></p></div>
+               </section>
+               <section>
+                    <div class="reviews">
+                         <div class="review">
+                              <div class="screenshotofreview">
+                                   <p class="screen"><img src="https://sun9-67.userapi.com/c855616/v855616177/12b2c9/BMDBQRIoayM.jpg" alt=""></p>
+                              </div>
+                              <div class="descrofreview">
+                                   <div class="headerofreview">
+                                        <h4>Михаил Собаков</h4>
+                                        <h4>07/09/19</h4>
+                                   </div>
+                                   <div class="bodyofreview">
+                                        <p>Этот отель просто супер! Мой питомец был очень доволен, он сам мне об этом сказал! Уезжать категорически не хотел, будем чилить в вашем отеле еще! Ставим вам пять звезд!</p>
+                                   </div>
+                                   <div class="footerofreview">
+                                        <div class="stars">
+                                             <img src="img/reviews/stars/5_stars.png" alt="">
+                                        </div>
+                                        <h4>Животное: кот</h4>                                  
+                                   </div>
+                                   <div class="stripe"><hr width="370" size="1" color="#997843"/></div>
+                                   <br /> 
+                                   <div class="titleofcomment">
+                                        <img src="img/messages.png" alt="">
+                                        <h4>Комментарии:</h4>
+                                   </div>        
+                                   <div class="commentofreview">
+                                        <img src="img/comments/comment-3.jpg" width="50" height="50" alt="">
+                                        <h4>Админ</h4>
+                                        <p>Этот отзыв добавить на главную</p>
+                                   </div>	
+                              </div>
+                         </div>
+                         <div class="review">
+                              <div class="screenshotofreview">
+                                   <p class="screen"><img src="https://sun9-67.userapi.com/c855616/v855616177/12b2c9/BMDBQRIoayM.jpg" alt=""></p>
+                              </div>
+                              <div class="descrofreview">
+                                   <div class="headerofreview">
+                                        <h4>Татьяна Рыбкина</h4>
+                                        <h4>01/09/19</h4>
+                                   </div>
+                                   <div class="bodyofreview">
+                                        <p>Не отель, а сказка! Мои хомячки радовались как дети! Приехали отдохнувшие и навеселе! Правда они расплодились, поэтому снимаю одну звезду, но в основном все понравилось, если что опять к вам!</p>
+                                   </div>
+                                   <div class="footerofreview">
+                                        <div class="stars">
+                                             <img src="img/reviews/stars/4_stars.png" alt="">
+                                        </div>
+                                        <h4>Животное: хомяк</h4>                                  
+                                   </div>
+                                   <div class="stripe"><hr width="370" size="1" color="#997843"/></div>
+                                   <br /> 
+                                   <div class="titleofcomment">
+                                        <img src="img/messages.png" alt="">
+                                        <h4>Комментарии:</h4>
+                                   </div>        
+                                   <div class="commentofreview">
+                                        <img src="img/comments/comment-1.jpg" width="50" height="50" alt="">
+                                        <h4>Админ</h4>
+                                        <p>Хороший отзыв</p>
+                                   </div>
+                                   <div class="commentofreview">
+                                        <img src="img/comments/comment-2.jpg" width="50" height="50" alt="">
+                                        <h4>Менеджер</h4>
+                                        <p>Добавить отзыв на главную</p>
+                                   </div>	
+                              </div>
+                         </div>
+                    </div>
+               </section>
+               <section>
+                    <div class="pagination">
+                         <a href="#">&laquo;</a>
+                         <a href="#">1</a>
+                         <a class="active" href="#">2</a>
+                         <a href="#">3</a>
+                         <a href="#">4</a>
+                         <a href="#">5</a>
+                         <a href="#">6</a>
+                         <a href="#">&raquo;</a>
+                    </div>  
+               </section>  
+          </div>   
+                    <footer>
+               <div class="cont cont-footer">
+                   <div class="listoftitles">
+                         <div class="headline"><p>Меню</p></div>
+                         <hr  width="180" size="1" color="#997843" />
+                         <div class="block1">
+                              <div><p><a href="index.html">Главная</a></p></div>
+                              <div><p><a href="conditions.html">Условия</a></p></div>
+                              <div><p><a href="prices.html">Цены</a></p></div>
+                              <div><p><a href="workers.html">Сотрудники</a></p></div>
+                              <div><p><a href="reviews.html">Отзывы</a></p></div>
+                              <div><p><a href="contacts.html">Контакты</a></p></div>
+                         </div>
+                    </div>
+                    <div class="block">
+                         <div class="headline"><p>Режим работы</p></div class="headline">
+                         <hr  width="180" size="1" color="#997843" />
+                         <div class="block1">
+                              <div>
+                                   <img src="img/socials/clock.svg" width="20" height="20" alt="">
+                                   <p>Понедельник-Воскресение:<br>14:00-22:00</p>
+                              </div>
+                              <br>
+                              <div>
+                                   <img src="img/socials/pin.svg" width="20" height="20" alt="">
+                                   <p>Ленина, 11<br>Иркутск, Россия</p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="block">
+                         <div class="headline"><p>Контакты</p></div class="headline">
+                         <hr  width="180" size="1" color="#997843" />
+                         <div class="block1">
+                              <div>
+                                   <img src="img/socials/instagram.svg" width="20" height="20" alt="">
+                                   <p><a href=#>ChillForAnimals</a></p>
+                              </div>
+                              <div>
+                                   <img src="img/socials/facebook.svg" width="20" height="20" alt="">
+                                   <p><a href=#>ChillForAnimals</a></p class="header-p">
+                              </div>
+                              <div>
+                                   <img src="img/socials/twitter.svg" width="20" height="20" alt="">
+                                   <p><a href=#>ChillForAnimals</a></p class="header-p">
+                              </div>
+                              <div>
+                                   <img src="img/socials/phone.svg" width="20" height="20" alt="">
+                                   <p><a href=#>8-950-076-88-14</a></p class="header-p">
+                              </div>
+                              <div>
+                                   <img src="img/socials/email.svg" width="20" height="20" alt="">
+                                   <p><a href=#>chillFA@gmail.com</a></p class="header-p">
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </footer> 
+     </body> 
+</html>
